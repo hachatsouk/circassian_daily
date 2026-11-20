@@ -1,0 +1,43 @@
+name: Daily proverb
+on:
+  schedule:
+    - cron: "0 5 * * *"        # 05:00 UTC = 08:00 in Amman
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-5-5' }}
+      BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+      BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
+      MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/output
+      TIMEZONE: Asia/Amman
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tools
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Prepare today's post
+        run: python -m cdaily prepare
+      - name: Publish the media files
+        run: |
+          git config user.name "circassian-daily-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add output
+          git commit -m "Media for $(date -u +%F)" || echo "nothing to commit"
+          git push
+      - name: Send to Buffer
+        run: python -m cdaily publish
+      - name: Save what was posted
+        run: |
+          git add data/state.json output
+          git commit -m "Posted $(date -u +%F)" || echo "nothing to commit"
+          git push

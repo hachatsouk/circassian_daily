@@ -1,0 +1,2 @@
+playwright>=1.44
+tzdata; platform_system == "Windows"

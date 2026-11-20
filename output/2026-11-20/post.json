@@ -1,0 +1,88 @@
+{
+ "date": "2026-11-20",
+ "proverb": {
+  "id": 712,
+  "dialect": "adyghe",
+  "circassian": "Лэжьэным уегъэлъапӀэ, шъхьахынагъэм уегъэпыуты",
+  "latin": "Lezchenım wyeghelhap'e, shhhaxınaghem wyeghepıutı",
+  "english": "Work makes you valued; idleness makes you worthless.",
+  "arabic": "العمل يرفع قدرك، والكسل يحطُّ منه.",
+  "theme": "Work & patience",
+  "source": "Çerkes Atasözleri [Адыгэ ГущыӀэжъхэр-Псалъэжьхэр], e-book, Adana, 2023, ISBN 978-605-65691-2-8 (PDF supplied by MA)",
+  "other_dialect_form": "Лэжьыгъэм уегъэлъапӀэ, щхьэхынагъэм уегъэпуд"
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "Лэжьэным",
+    "en": "by work, through labour",
+    "ar": "بالعمل",
+    "note_en": "From лэжьэн (to work, labour) with the oblique-case ending -м.",
+    "note_ar": "من лэжьэн (يعمل / العمل) مع لاحقة الحالة المائلة -м.",
+    "unsure": false
+   },
+   {
+    "cyr": "уегъэлъапӀэ",
+    "en": "it makes you valued",
+    "ar": "يجعلك عزيزًا ذا قيمة",
+    "note_en": "Verb: у- (you), the causative гъэ-, and лъапӀэ (precious, dear).",
+    "note_ar": "فعل: у- (أنت)، وصيغة التسبيب гъэ-، وكلمة лъапӀэ (غالٍ، عزيز).",
+    "unsure": true
+   },
+   {
+    "cyr": "шъхьахынагъэм",
+    "en": "by idleness, laziness",
+    "ar": "بالكسل",
+    "note_en": "Abstract noun in -гъэ (laziness) with the oblique-case ending -м.",
+    "note_ar": "اسم معنى بلاحقة -гъэ (الكسل) مع علامة الحالة المائلة -м.",
+    "unsure": true
+   },
+   {
+    "cyr": "уегъэпыуты",
+    "en": "it makes you worthless",
+    "ar": "يجعلك بلا قيمة",
+    "note_en": "Causative verb with у- (you) and гъэ-; the root meaning is uncertain.",
+    "note_ar": "فعل تسبيبي مع у- (أنت) وгъэ-؛ معنى الجذر غير مؤكد.",
+    "unsure": true
+   }
+  ],
+  "meaning_en": "Honest work gives a person worth and respect, while idleness slowly wears that worth away. Value is earned through effort, not handed down.",
+  "meaning_ar": "العمل الصادق يمنح الإنسان قيمته واحترامه، والكسل يُنقص منهما شيئًا فشيئًا. القيمة تُكتسب بالجهد ولا تُوهَب.",
+  "caption": "Today's Circassian proverb: «Лэжьэным уегъэлъапӀэ, шъхьахынагъэм уегъэпыуты»\nWork makes you valued; idleness makes you worthless. A reminder that effort and patience build a person's worth.\n\nمثل شركسي اليوم:\nالعمل يرفع قدرك، والكسل يحطُّ منه. بالجهد والصبر تُبنى قيمة الإنسان.",
+  "hashtags": [
+   "CircassianProverbs",
+   "Adyghe",
+   "Circassian",
+   "Adyge",
+   "ProverbOfTheDay",
+   "WorkEthic",
+   "Patience",
+   "أمثال_شركسية",
+   "الشركس",
+   "العمل",
+   "حكمة",
+   "Адыгэ"
+  ],
+  "design": {
+   "bg": "#F3E9D2",
+   "bg2": "#E4D2A8",
+   "ink": "#2B2A1F",
+   "accent": "#8A5A1B",
+   "muted": "#4E4A38",
+   "layout": "framed",
+   "font": "serif",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\"><circle cx=\"200\" cy=\"180\" r=\"130\" fill=\"#8A5A1B\"/><circle cx=\"200\" cy=\"180\" r=\"104\" fill=\"#E4D2A8\"/><path d=\"M200 340 L200 150\" stroke=\"#4E4A38\" stroke-width=\"5\" fill=\"none\"/><path d=\"M200 150 Q184 125 200 95 Q216 125 200 150Z\" fill=\"#2B2A1F\"/><path d=\"M200 200 Q170 195 160 165 Q190 168 200 200Z\" fill=\"#2B2A1F\"/><path d=\"M200 200 Q230 195 240 165 Q210 168 200 200Z\" fill=\"#2B2A1F\"/><path d=\"M200 255 Q170 250 160 220 Q190 223 200 255Z\" fill=\"#2B2A1F\"/><path d=\"M200 255 Q230 250 240 220 Q210 223 200 255Z\" fill=\"#2B2A1F\"/><path d=\"M200 340 Q190 260 130 190\" stroke=\"#4E4A38\" stroke-width=\"4\" fill=\"none\"/><path d=\"M130 190 Q112 168 126 140 Q145 165 130 190Z\" fill=\"#2B2A1F\"/><path d=\"M158 228 Q135 235 118 215 Q142 205 158 228Z\" fill=\"#2B2A1F\"/><path d=\"M200 340 Q210 260 270 190\" stroke=\"#4E4A38\" stroke-width=\"4\" fill=\"none\"/><path d=\"M270 190 Q288 168 274 140 Q255 165 270 190Z\" fill=\"#2B2A1F\"/><path d=\"M242 228 Q265 235 282 215 Q258 205 242 228Z\" fill=\"#2B2A1F\"/><rect x=\"60\" y=\"340\" width=\"280\" height=\"14\" fill=\"#2B2A1F\"/><line x1=\"80\" y1=\"372\" x2=\"320\" y2=\"372\" stroke=\"#8A5A1B\" stroke-width=\"4\"/><line x1=\"110\" y1=\"387\" x2=\"290\" y2=\"387\" stroke=\"#4E4A38\" stroke-width=\"3\"/></svg>"
+  }
+ },
+ "caption": "Лэжьэным уегъэлъапӀэ, шъхьахынагъэм уегъэпыуты\n\nالعمل يرفع قدرك، والكسل يحطُّ منه.\nWork makes you valued; idleness makes you worthless.\n\nToday's Circassian proverb: «Лэжьэным уегъэлъапӀэ, шъхьахынагъэм уегъэпыуты»\nWork makes you valued; idleness makes you worthless. A reminder that effort and patience build a person's worth.\n\nمثل شركسي اليوم:\nالعمل يرفع قدرك، والكسل يحطُّ منه. بالجهد والصبر تُبنى قيمة الإنسان.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#CircassianProverbs #Adyghe #Circassian #Adyge #ProverbOfTheDay #WorkEthic #Patience #أمثال_شركسية #الشركس #العمل #حكمة #Адыгэ",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg",
+  "slide_05.jpg",
+  "slide_06.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}
