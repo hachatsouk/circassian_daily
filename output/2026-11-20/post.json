@@ -15,66 +15,66 @@
   "words": [
    {
     "cyr": "Лэжьэным",
-    "en": "by work, through labour",
-    "ar": "بالعمل",
-    "note_en": "From лэжьэн (to work, labour) with the oblique-case ending -м.",
-    "note_ar": "من лэжьэн (يعمل / العمل) مع لاحقة الحالة المائلة -м.",
+    "en": "through work, by labor",
+    "ar": "بالعمل، بالكدّ",
+    "note_en": "Root лэжьэн (to work) with the oblique case ending -м.",
+    "note_ar": "الجذر лэжьэн (يعمل) مع علامة الحالة المائلة -м.",
     "unsure": false
    },
    {
     "cyr": "уегъэлъапӀэ",
-    "en": "it makes you valued",
+    "en": "makes you valued",
     "ar": "يجعلك عزيزًا ذا قيمة",
-    "note_en": "Verb: у- (you), the causative гъэ-, and лъапӀэ (precious, dear).",
-    "note_ar": "فعل: у- (أنت)، وصيغة التسبيب гъэ-، وكلمة лъапӀэ (غالٍ، عزيز).",
+    "note_en": "Verb: у- (you) + causative гъэ- + лъапӀэ (dear, precious).",
+    "note_ar": "فعل: у- (أنتَ) + السببية гъэ- + лъапӀэ (غالٍ، ثمين).",
     "unsure": true
    },
    {
     "cyr": "шъхьахынагъэм",
-    "en": "by idleness, laziness",
-    "ar": "بالكسل",
-    "note_en": "Abstract noun in -гъэ (laziness) with the oblique-case ending -м.",
-    "note_ar": "اسم معنى بلاحقة -гъэ (الكسل) مع علامة الحالة المائلة -м.",
+    "en": "idleness, laziness",
+    "ar": "الكسل، التراخي",
+    "note_en": "Abstract noun with suffix -гъэ and the oblique case ending -м.",
+    "note_ar": "اسم معنوي بلاحقة -гъэ وعلامة الحالة المائلة -м.",
     "unsure": true
    },
    {
     "cyr": "уегъэпыуты",
-    "en": "it makes you worthless",
+    "en": "makes you worthless",
     "ar": "يجعلك بلا قيمة",
-    "note_en": "Causative verb with у- (you) and гъэ-; the root meaning is uncertain.",
-    "note_ar": "فعل تسبيبي مع у- (أنت) وгъэ-؛ معنى الجذر غير مؤكد.",
+    "note_en": "",
+    "note_ar": "",
     "unsure": true
    }
   ],
-  "meaning_en": "Honest work gives a person worth and respect, while idleness slowly wears that worth away. Value is earned through effort, not handed down.",
-  "meaning_ar": "العمل الصادق يمنح الإنسان قيمته واحترامه، والكسل يُنقص منهما شيئًا فشيئًا. القيمة تُكتسب بالجهد ولا تُوهَب.",
-  "caption": "Today's Circassian proverb: «Лэжьэным уегъэлъапӀэ, шъхьахынагъэм уегъэпыуты»\nWork makes you valued; idleness makes you worthless. A reminder that effort and patience build a person's worth.\n\nمثل شركسي اليوم:\nالعمل يرفع قدرك، والكسل يحطُّ منه. بالجهد والصبر تُبنى قيمة الإنسان.",
+  "meaning_en": "Effort earns a person respect and worth, while idleness wears that worth away. Patient, steady work is what makes a person valued.",
+  "meaning_ar": "الجهد يكسب الإنسان الاحترام والقيمة، والكسل يُذهب هذه القيمة. والعمل الصبور المتواصل هو ما يجعل المرء عزيزًا.",
+  "caption": "Лэжьэным уегъэлъапӀэ, шъхьахынагъэм уегъэпыуты\n\nWork makes you valued; idleness makes you worthless. A Circassian reminder that patient effort builds a person's worth.\n\nالعمل يرفع قدرك، والكسل يحطُّ منه. حكمة شركسية تذكّرنا بأن الجهد الصبور يبني قيمة الإنسان.",
   "hashtags": [
-   "CircassianProverbs",
-   "Adyghe",
    "Circassian",
-   "Adyge",
+   "Adyghe",
+   "CircassianProverbs",
    "ProverbOfTheDay",
    "WorkEthic",
    "Patience",
-   "أمثال_شركسية",
+   "Wisdom",
    "الشركس",
-   "العمل",
-   "حكمة",
-   "Адыгэ"
+   "الأديغة",
+   "أمثال_شركسية",
+   "حكمة_اليوم",
+   "العمل"
   ],
   "design": {
-   "bg": "#F3E9D2",
-   "bg2": "#E4D2A8",
-   "ink": "#2B2A1F",
-   "accent": "#8A5A1B",
-   "muted": "#4E4A38",
+   "bg": "#1f2a24",
+   "bg2": "#2f3d33",
+   "ink": "#f4ecd8",
+   "accent": "#d9a441",
+   "muted": "#b9c2b0",
    "layout": "framed",
    "font": "serif",
-   "motif_svg": "<svg viewBox=\"0 0 400 400\"><circle cx=\"200\" cy=\"180\" r=\"130\" fill=\"#8A5A1B\"/><circle cx=\"200\" cy=\"180\" r=\"104\" fill=\"#E4D2A8\"/><path d=\"M200 340 L200 150\" stroke=\"#4E4A38\" stroke-width=\"5\" fill=\"none\"/><path d=\"M200 150 Q184 125 200 95 Q216 125 200 150Z\" fill=\"#2B2A1F\"/><path d=\"M200 200 Q170 195 160 165 Q190 168 200 200Z\" fill=\"#2B2A1F\"/><path d=\"M200 200 Q230 195 240 165 Q210 168 200 200Z\" fill=\"#2B2A1F\"/><path d=\"M200 255 Q170 250 160 220 Q190 223 200 255Z\" fill=\"#2B2A1F\"/><path d=\"M200 255 Q230 250 240 220 Q210 223 200 255Z\" fill=\"#2B2A1F\"/><path d=\"M200 340 Q190 260 130 190\" stroke=\"#4E4A38\" stroke-width=\"4\" fill=\"none\"/><path d=\"M130 190 Q112 168 126 140 Q145 165 130 190Z\" fill=\"#2B2A1F\"/><path d=\"M158 228 Q135 235 118 215 Q142 205 158 228Z\" fill=\"#2B2A1F\"/><path d=\"M200 340 Q210 260 270 190\" stroke=\"#4E4A38\" stroke-width=\"4\" fill=\"none\"/><path d=\"M270 190 Q288 168 274 140 Q255 165 270 190Z\" fill=\"#2B2A1F\"/><path d=\"M242 228 Q265 235 282 215 Q258 205 242 228Z\" fill=\"#2B2A1F\"/><rect x=\"60\" y=\"340\" width=\"280\" height=\"14\" fill=\"#2B2A1F\"/><line x1=\"80\" y1=\"372\" x2=\"320\" y2=\"372\" stroke=\"#8A5A1B\" stroke-width=\"4\"/><line x1=\"110\" y1=\"387\" x2=\"290\" y2=\"387\" stroke=\"#4E4A38\" stroke-width=\"3\"/></svg>"
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><g><circle cx=\"90\" cy=\"90\" r=\"34\" fill=\"#d9a441\"/><line x1=\"90\" y1=\"34\" x2=\"90\" y2=\"20\" stroke=\"#d9a441\" stroke-width=\"5\"/><line x1=\"90\" y1=\"146\" x2=\"90\" y2=\"160\" stroke=\"#d9a441\" stroke-width=\"5\"/><line x1=\"34\" y1=\"90\" x2=\"20\" y2=\"90\" stroke=\"#d9a441\" stroke-width=\"5\"/><line x1=\"146\" y1=\"90\" x2=\"160\" y2=\"90\" stroke=\"#d9a441\" stroke-width=\"5\"/><line x1=\"50\" y1=\"50\" x2=\"40\" y2=\"40\" stroke=\"#d9a441\" stroke-width=\"5\"/><line x1=\"130\" y1=\"50\" x2=\"140\" y2=\"40\" stroke=\"#d9a441\" stroke-width=\"5\"/><line x1=\"50\" y1=\"130\" x2=\"40\" y2=\"140\" stroke=\"#d9a441\" stroke-width=\"5\"/><polygon points=\"100,240 320,240 320,265 250,275 235,310 275,335 275,355 125,355 125,335 165,310 150,275 100,265\" fill=\"#f4ecd8\"/><polygon points=\"100,240 40,248 100,265\" fill=\"#f4ecd8\"/><rect x=\"100\" y=\"355\" width=\"200\" height=\"14\" fill=\"#2f3d33\"/><polygon points=\"250,60 320,95 305,125 235,90\" fill=\"#d9a441\"/><polygon points=\"272,88 284,96 218,222 206,214\" fill=\"#b9c2b0\"/><line x1=\"170\" y1=\"225\" x2=\"150\" y2=\"195\" stroke=\"#d9a441\" stroke-width=\"5\"/><line x1=\"185\" y1=\"222\" x2=\"185\" y2=\"185\" stroke=\"#d9a441\" stroke-width=\"5\"/><line x1=\"150\" y1=\"230\" x2=\"120\" y2=\"215\" stroke=\"#d9a441\" stroke-width=\"5\"/><circle cx=\"140\" cy=\"180\" r=\"5\" fill=\"#f4ecd8\"/><circle cx=\"200\" cy=\"170\" r=\"4\" fill=\"#f4ecd8\"/><circle cx=\"110\" cy=\"200\" r=\"4\" fill=\"#b9c2b0\"/></g></svg>"
   }
  },
- "caption": "Лэжьэным уегъэлъапӀэ, шъхьахынагъэм уегъэпыуты\n\nالعمل يرفع قدرك، والكسل يحطُّ منه.\nWork makes you valued; idleness makes you worthless.\n\nToday's Circassian proverb: «Лэжьэным уегъэлъапӀэ, шъхьахынагъэм уегъэпыуты»\nWork makes you valued; idleness makes you worthless. A reminder that effort and patience build a person's worth.\n\nمثل شركسي اليوم:\nالعمل يرفع قدرك، والكسل يحطُّ منه. بالجهد والصبر تُبنى قيمة الإنسان.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#CircassianProverbs #Adyghe #Circassian #Adyge #ProverbOfTheDay #WorkEthic #Patience #أمثال_شركسية #الشركس #العمل #حكمة #Адыгэ",
+ "caption": "Лэжьэным уегъэлъапӀэ, шъхьахынагъэм уегъэпыуты\n\nالعمل يرفع قدرك، والكسل يحطُّ منه.\nWork makes you valued; idleness makes you worthless.\n\nЛэжьэным уегъэлъапӀэ, шъхьахынагъэм уегъэпыуты\n\nWork makes you valued; idleness makes you worthless. A Circassian reminder that patient effort builds a person's worth.\n\nالعمل يرفع قدرك، والكسل يحطُّ منه. حكمة شركسية تذكّرنا بأن الجهد الصبور يبني قيمة الإنسان.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#Circassian #Adyghe #CircassianProverbs #ProverbOfTheDay #WorkEthic #Patience #Wisdom #الشركس #الأديغة #أمثال_شركسية #حكمة_اليوم #العمل",
  "slides": [
   "slide_01.jpg",
   "slide_02.jpg",
