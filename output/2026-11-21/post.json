@@ -1,0 +1,97 @@
+{
+ "date": "2026-11-21",
+ "proverb": {
+  "id": 306,
+  "dialect": "kabardian",
+  "circassian": "Нэхъыжь зымыгъэлъапӀэр щхьэ лъапӀэгъуэ ихуэркъым",
+  "latin": "Nekhızch zımıghelhap'er schhe lhap'eghwe ixwerqım",
+  "english": "He who does not honour his elders will never come to honour himself.",
+  "arabic": "من لا يُكرم كباره لا ينال هو الكرامة.",
+  "theme": "Honour & character",
+  "source": "Адыгэ псалъэжьхэр, section on counsel, upbringing and knowledge (circassian.ucoz.com)",
+  "other_dialect_form": ""
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "Нэхъыжь",
+    "en": "elder, older person",
+    "ar": "الكبير في السن",
+    "note_en": "Built from the comparative prefix нэхъ- and жь 'old', so literally 'older'.",
+    "note_ar": "مكوّنة من بادئة المقارنة нэхъ- وكلمة жь «قديم/كبير»، أي «الأكبر سنًّا».",
+    "unsure": false
+   },
+   {
+    "cyr": "зымыгъэлъапӀэр",
+    "en": "who does not honour",
+    "ar": "الذي لا يُكرم",
+    "note_en": "Relative зы- + negative мы- + causative гъэ- + лъапӀэ 'precious' + absolutive -р.",
+    "note_ar": "зы- الموصولة + مы- النافية + гъэ- السببية + лъапӀэ «ثمين» + علامة الحالة المطلقة -р.",
+    "unsure": false
+   },
+   {
+    "cyr": "щхьэ",
+    "en": "himself, his own self",
+    "ar": "نفسه",
+    "note_en": "Literally 'head'; here it stands for the self.",
+    "note_ar": "تعني حرفيًّا «رأس»، وهنا تدل على الذات.",
+    "unsure": false
+   },
+   {
+    "cyr": "лъапӀэгъуэ",
+    "en": "honour, worth",
+    "ar": "الكرامة، القيمة",
+    "note_en": "Derived from лъапӀэ 'precious'; the ending is a noun-forming suffix.",
+    "note_ar": "مشتقة من лъапӀэ «ثمين» مع لاحقة تكوّن اسمًا.",
+    "unsure": true
+   },
+   {
+    "cyr": "ихуэркъым",
+    "en": "does not come to him",
+    "ar": "لا يحصل له",
+    "note_en": "Verb 'to befall' with a person prefix and the negative present ending -къым.",
+    "note_ar": "فعل «يصيب/يحلّ» مع بادئة الشخص ولاحقة النفي في المضارع -къым.",
+    "unsure": true
+   }
+  ],
+  "meaning_en": "Respect for elders is the foundation of one's own dignity. Someone who fails to honour those older than himself will not earn honour in return.",
+  "meaning_ar": "احترام الكبار أساس كرامة الإنسان نفسه. ومن لا يُكرم من هو أكبر منه فلن ينال الكرامة بدوره.",
+  "caption": "Today's Circassian proverb: \"Нэхъыжь зымыгъэлъапӀэр щхьэ лъапӀэгъуэ ихуэркъым.\"\nHe who does not honour his elders will never come to honour himself. Like a young sapling growing in the shade of an old tree, we grow through those who came before us.\n\nمثل شركسي لهذا اليوم: من لا يُكرم كباره لا ينال هو الكرامة. فالغصن الصغير ينمو في ظل الشجرة العتيقة، ونحن نكبر بمن سبقونا.",
+  "hashtags": [
+   "CircassianProverbs",
+   "Circassian",
+   "Adyghe",
+   "Kabardian",
+   "Adyghebze",
+   "respectelders",
+   "wisdom",
+   "شركس",
+   "الشركس",
+   "أمثال_شركسية",
+   "حكمة",
+   "احترام_الكبار"
+  ],
+  "design": {
+   "bg": "#1f2a24",
+   "bg2": "#2e3b30",
+   "ink": "#f4ead5",
+   "accent": "#d9a441",
+   "muted": "#b9c2a8",
+   "layout": "framed",
+   "font": "serif",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"305\" cy=\"90\" r=\"38\" fill=\"#d9a441\"/><circle cx=\"305\" cy=\"90\" r=\"52\" fill=\"none\" stroke=\"#d9a441\" stroke-width=\"3\"/><path d=\"M175 340 C185 300 190 250 192 205 L218 205 C220 250 226 300 238 340 Z\" fill=\"#b9c2a8\"/><circle cx=\"205\" cy=\"150\" r=\"62\" fill=\"#2e3b30\" stroke=\"#b9c2a8\" stroke-width=\"5\"/><circle cx=\"155\" cy=\"190\" r=\"42\" fill=\"#2e3b30\" stroke=\"#b9c2a8\" stroke-width=\"5\"/><circle cx=\"258\" cy=\"188\" r=\"40\" fill=\"#2e3b30\" stroke=\"#b9c2a8\" stroke-width=\"5\"/><circle cx=\"205\" cy=\"150\" r=\"22\" fill=\"none\" stroke=\"#d9a441\" stroke-width=\"3\"/><path d=\"M175 340 C160 350 140 352 120 360\" fill=\"none\" stroke=\"#b9c2a8\" stroke-width=\"5\"/><path d=\"M238 340 C250 350 268 352 285 360\" fill=\"none\" stroke=\"#b9c2a8\" stroke-width=\"5\"/><path d=\"M205 340 L205 372\" fill=\"none\" stroke=\"#b9c2a8\" stroke-width=\"5\"/><line x1=\"60\" y1=\"340\" x2=\"340\" y2=\"340\" stroke=\"#f4ead5\" stroke-width=\"4\"/><path d=\"M318 340 C316 318 312 300 304 286\" fill=\"none\" stroke=\"#d9a441\" stroke-width=\"5\"/><ellipse cx=\"296\" cy=\"284\" rx=\"16\" ry=\"8\" transform=\"rotate(-35 296 284)\" fill=\"#d9a441\"/><ellipse cx=\"318\" cy=\"310\" rx=\"14\" ry=\"7\" transform=\"rotate(30 318 310)\" fill=\"#d9a441\"/><polygon points=\"80,372 90,362 100,372 90,382\" fill=\"#d9a441\"/><polygon points=\"320,372 330,362 340,372 330,382\" fill=\"#d9a441\"/><polygon points=\"140,376 148,368 156,376 148,384\" fill=\"#b9c2a8\"/><polygon points=\"250,376 258,368 266,376 258,384\" fill=\"#b9c2a8\"/></svg>"
+  }
+ },
+ "caption": "Нэхъыжь зымыгъэлъапӀэр щхьэ лъапӀэгъуэ ихуэркъым\n\nمن لا يُكرم كباره لا ينال هو الكرامة.\nHe who does not honour his elders will never come to honour himself.\n\nToday's Circassian proverb: \"Нэхъыжь зымыгъэлъапӀэр щхьэ лъапӀэгъуэ ихуэркъым.\"\nHe who does not honour his elders will never come to honour himself. Like a young sapling growing in the shade of an old tree, we grow through those who came before us.\n\nمثل شركسي لهذا اليوم: من لا يُكرم كباره لا ينال هو الكرامة. فالغصن الصغير ينمو في ظل الشجرة العتيقة، ونحن نكبر بمن سبقونا.\n\nKabardian dialect (East Circassian) · اللهجة القباردية (الشركسية الشرقية)\n\n#CircassianProverbs #Circassian #Adyghe #Kabardian #Adyghebze #respectelders #wisdom #شركس #الشركس #أمثال_شركسية #حكمة #احترام_الكبار",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg",
+  "slide_05.jpg",
+  "slide_06.jpg",
+  "slide_07.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}
