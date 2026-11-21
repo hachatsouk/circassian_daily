@@ -6,6 +6,7 @@
   python -m cdaily run                 prepare, then publish
   python -m cdaily setup               ask for the keys, find the Instagram channel, make a test post locally
   python -m cdaily github              create the GitHub repository, store the secrets, switch on the daily run
+  python -m cdaily check               print skip=true if today's post has already been sent (used by the daily run)
 Options: --date YYYY-MM-DD, --id N (a specific proverb), --mock (no Claude call), --dry-run (no Buffer call)
 """
 import argparse, datetime as dt, getpass, json, os, shutil, subprocess, sys
@@ -16,6 +17,10 @@ from .core import DIALECT_LABEL, OUT, ROOT, env, load_env, load_state, pick_prov
 
 def today():
     return dt.datetime.now(ZoneInfo(env("TIMEZONE", "Asia/Amman"))).date().isoformat()
+
+
+def posted_today():
+    return today() in load_state()["posted"].values()
 
 
 def prepare(args):
@@ -171,7 +176,7 @@ def github(args):
 def main():
     load_env()
     ap = argparse.ArgumentParser(prog="cdaily", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("command", choices=["channels", "prepare", "publish", "run", "setup", "github"])
+    ap.add_argument("command", choices=["channels", "prepare", "publish", "run", "setup", "github", "check"])
     ap.add_argument("--date"); ap.add_argument("--id", type=int)
     ap.add_argument("--mock", action="store_true"); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--force", action="store_true")
@@ -179,6 +184,8 @@ def main():
     if args.command == "channels":
         for ch in pub.list_channels():
             print(f'{ch["id"]}  {ch["service"]:<12} {ch["name"]}')
+    elif args.command == "check":
+        print("skip=true" if posted_today() else "skip=false")
     elif args.command == "setup":
         setup(args)
     elif args.command == "github":
