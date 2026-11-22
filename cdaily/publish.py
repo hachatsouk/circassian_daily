@@ -67,20 +67,15 @@ CREATE = """mutation($input: CreatePostInput!) { createPost(input: $input) {
 
 def create_post(kind, text, assets, due_at=None):
     """kind is post, reel or story. A carousel is a 'post' with several images.
-    If Buffer will not take the scheduled time, the post is sent straight away instead of being lost."""
-    if due_at:
-        try:
-            return _create(kind, text, assets, due_at)
-        except SystemExit as e:
-            print(f"Scheduling the {kind} for {due_at} failed ({e}); sending it now instead.")
-    return _create(kind, text, assets, None)
+    If Buffer refuses, this stops with an error. It never falls back to posting straight away."""
+    return _create(kind, text, assets, due_at)
 
 
 def _create(kind, text, assets, due_at):
     inp = {"channelId": env("BUFFER_CHANNEL_ID", required=True), "text": text, "assets": assets,
            "schedulingType": "automatic", "needsApproval": False,
            "mode": "customScheduled" if due_at else "shareNow",
-           "metadata": {"instagram": {"type": kind, "shouldShareToFeed": True}}}
+           "metadata": {"instagram": {"type": kind, "shouldShareToFeed": kind != "reel"}}}   # reel: Reels tab only, not the grid
     if due_at:
         inp["dueAt"] = due_at
     res = gql(CREATE, {"input": inp})["createPost"]

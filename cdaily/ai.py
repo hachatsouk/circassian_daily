@@ -31,7 +31,7 @@ Return JSON with exactly these keys:
     "motif_svg": an original SVG illustration of the proverb's central image (for example a wolf and a forest,
       a sword, a hearth, a mountain, bees) drawn with simple shapes in a flat, elegant style; it may also draw on
       Circassian ornament. Rules: root <svg viewBox="0 0 400 400">, only path/circle/ellipse/rect/line/polygon/polyline/g,
-      colours only from this palette or "currentColor", no text, no images, no scripts, no external references,
+      colours ONLY "currentColor" (shade with fill-opacity/stroke-opacity; the app tints it to the day palette), no text, no images, no scripts, no external references,
       under 6000 characters.}}
   Text must stay readable: contrast between "ink" and both backgrounds must be high. Vary palettes from day to day."""
 

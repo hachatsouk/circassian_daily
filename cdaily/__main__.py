@@ -54,6 +54,7 @@ def prepare_day(args, day):
     folder.mkdir(parents=True, exist_ok=True)
     p = pick_proverb(load_state(), args.id, exclude=planned_ids())
     c = ai.build_content(p, mock=args.mock)
+    c["design"] = render.style_for(day, c["design"])                   # a different look every day
     feed = render.slides(p, c, render.FEED)
     tall = render.slides(p, c, render.TALL)
     feed_files = [folder / f"slide_{i:02d}.jpg" for i in range(1, len(feed) + 1)]
@@ -114,15 +115,23 @@ def publish_day(args, day):
         return
     pub.wait_public(slides + [story, reel])
     when = due_at(day)
+    if not when and day != today():
+        raise SystemExit(f"{day}: its posting time has passed but it is not today; refusing to post it now.")
     alt = post["proverb"]["english"]
-    ids = {
-        "carousel": pub.create_post("post", post["caption"], [{"image": {"url": u, "metadata": {"altText": alt}}} for u in slides], when),
-        "reel": pub.create_post("reel", post["caption"], [{"video": {"url": reel}}], when),
-        "story": pub.create_post("story", "", [{"image": {"url": story, "metadata": {"altText": alt}}}], when),
-    }
+    bfile = folder / "buffer.json"
+    ids = json.loads(bfile.read_text(encoding="utf-8")) if bfile.exists() else {}      # pieces already with Buffer
+    pieces = [
+        ("carousel", "post", post["caption"], [{"image": {"url": u, "metadata": {"altText": alt}}} for u in slides]),
+        ("reel", "reel", post["caption"], [{"video": {"url": reel}}]),
+        ("story", "story", "", [{"image": {"url": story, "metadata": {"altText": alt}}}]),
+    ]
+    for name, kind, text, assets in pieces:
+        if name in ids:
+            continue                                   # never send the same piece twice
+        ids[name] = pub.create_post(kind, text, assets, when)
+        bfile.write_text(json.dumps(ids, indent=1), encoding="utf-8")
     state["posted"][pid] = day
     save_state(state)
-    (folder / "buffer.json").write_text(json.dumps(ids, indent=1), encoding="utf-8")
     print(f"{day}: sent to Buffer ({'scheduled ' + when if when else 'share now'}):", ids)
 
 
@@ -216,8 +225,10 @@ def main():
         for ch in pub.list_channels():
             print(f'{ch["id"]}  {ch["service"]:<12} {ch["name"]}')
     elif args.command == "check":
-        ahead = (dt.date.fromisoformat(today()) + dt.timedelta(args.days - 1)).isoformat()
-        print("skip=true" if ahead in load_state()["posted"].values() else "skip=false")
+        done = set(load_state()["posted"].values())
+        start = dt.date.fromisoformat(today())
+        need = [(start + dt.timedelta(d)).isoformat() for d in range(args.days)]
+        print("skip=true" if all(d in done for d in need) else "skip=false")
     elif args.command == "setup":
         setup(args)
     elif args.command == "github":

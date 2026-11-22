@@ -1,5 +1,5 @@
 """Turn a proverb + Claude's content into slide images (HTML rendered with headless Chromium)."""
-import base64, html, math
+import base64, html, math, re
 from .core import ASSETS, DIALECT_LABEL, letters, translit
 
 FEED, TALL = (1080, 1350), (1080, 1920)          # carousel slide; story and reel frame
@@ -13,12 +13,12 @@ FONT_URL = ("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;70
 CSS = """
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:%(w)spx;height:%(h)spx}
-body{font-family:%(lat)s,'DejaVu Serif',serif;color:%(ink)s;background:linear-gradient(160deg,%(bg)s 0%%,%(bg2)s 100%%);
+body{font-family:%(lat)s,'DejaVu Serif',serif;color:%(ink)s;background:%(bgcss)s;
   position:relative;overflow:hidden}
 .ar{font-family:%(ar)s,'Noto Naskh Arabic','DejaVu Sans',serif;direction:rtl;unicode-bidi:isolate;line-height:1.7}
-.motif{position:absolute;color:%(accent)s;opacity:.13;width:%(mw)spx;height:%(mw)spx;right:-140px;bottom:-140px}
+.motif{position:absolute;color:%(accent)s;opacity:%(mop)s;width:%(mw)spx;height:%(mw)spx;right:-140px;bottom:-140px}
 .motif svg{width:100%%;height:100%%}
-.split .motif{opacity:.9;right:auto;left:50%%;transform:translateX(-50%%);top:%(mt)spx;bottom:auto;width:%(ms)spx;height:%(ms)spx}
+.split .motif{opacity:.5;right:auto;left:50%%;transform:translateX(-50%%);top:%(mt)spx;bottom:auto;width:%(ms)spx;height:%(ms)spx}
 .wrap{position:absolute;inset:0;padding:%(pad)s;display:flex;flex-direction:column}
 .top{display:flex;justify-content:space-between;align-items:center;gap:24px}
 .logo{height:%(logo)spx;width:%(logo)spx;border-radius:50%%;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,.22)}
@@ -41,7 +41,7 @@ body{font-family:%(lat)s,'DejaVu Serif',serif;color:%(ink)s;background:linear-gr
 .letters{display:flex;flex-wrap:wrap;gap:12px;justify-content:inherit}
 .centered .letters,.framed .letters,.split .letters{justify-content:center}
 .letters span{min-width:70px;text-align:center;font-size:40px;padding:10px 14px;border-radius:14px;
-  background:rgba(255,255,255,.10);border:2px solid %(accent)s}
+  background:%(chipbg)s;border:2px solid %(accent)s}
 .gloss{font-size:46px;line-height:1.3}
 .note{font-size:30px;color:%(muted)s;line-height:1.45}
 .pair{display:flex;flex-direction:column;gap:22px;width:100%%}
@@ -49,7 +49,38 @@ body{font-family:%(lat)s,'DejaVu Serif',serif;color:%(ink)s;background:linear-gr
 """
 
 
+import datetime as _dt
 import functools
+
+# Eight looks that rotate day by day (light and dark alternate), so neighbouring posts never look alike.
+# Claude still draws the motif for each proverb; the palette, type and layout come from here.
+STYLES = [
+    dict(name="parchment", light=True, bg="#F4ECD8", bg2="#E6D7B8", ink="#2B2118", accent="#9C2F1F", muted="#6B5B4A",
+         font="serif", layout="framed", grad="radial"),
+    dict(name="forest", bg="#12402F", bg2="#071F17", ink="#F3EBD3", accent="#D4A84B", muted="#A9C2B4",
+         font="display", layout="centered", angle=170),
+    dict(name="snow", light=True, bg="#EEF5F8", bg2="#C9DCE6", ink="#13303F", accent="#1F6F8B", muted="#4E6B78",
+         font="sans", layout="split", angle=180),
+    dict(name="pomegranate", bg="#86202A", bg2="#420B12", ink="#FBEFE3", accent="#F2C14E", muted="#E6BDB4",
+         font="serif", layout="left", angle=135),
+    dict(name="sage", light=True, bg="#E3E8CF", bg2="#C3CDA2", ink="#26301A", accent="#55692A", muted="#5E6650",
+         font="serif", layout="left", angle=200),
+    dict(name="charcoal", bg="#222020", bg2="#0E0D0C", ink="#F5F0E6", accent="#C9A227", muted="#A39A8C",
+         font="display", layout="framed", grad="radial"),
+    dict(name="terracotta", bg="#C8643B", bg2="#8E3B21", ink="#FFF6EC", accent="#FFE1B0", muted="#F8D3BC",
+         font="sans", layout="centered", angle=150),
+    dict(name="indigo", bg="#232A63", bg2="#0C0E2C", ink="#EDEBFF", accent="#9DBBFF", muted="#B4B3D6",
+         font="display", layout="split", angle=165),
+]
+
+
+def style_for(day, design):
+    """Today's look: the rotating palette/type/layout plus the motif Claude drew for this proverb."""
+    st = STYLES[_dt.date.fromisoformat(day).toordinal() % len(STYLES)]
+    svg = re.sub(r'(fill|stroke)\s*=\s*"(?!none|currentColor)[^"]*"', r'\1="currentColor"', design.get("motif_svg") or "")
+    return dict(design, **{k: v for k, v in st.items() if k != "name"}, style=st["name"], motif_svg=svg)
+
+
 
 
 @functools.lru_cache(maxsize=1)
@@ -72,10 +103,15 @@ def _page(body, d, size, wordsize=120):
     w, h = size
     tall = h > 1400
     lat, ar = FONTS[d["font"]]
-    css = CSS % dict(w=w, h=h, lat=lat, ar=ar, ink=d["ink"], bg=d["bg"], bg2=d["bg2"], accent=d["accent"],
+    grad = d.get("grad", "linear")
+    bgcss = (f'radial-gradient(circle at 30% 20%, {d["bg"]} 0%, {d["bg2"]} 85%)' if grad == "radial" else
+             f'linear-gradient({d.get("angle", 160)}deg, {d["bg"]} 0%, {d["bg2"]} 100%)')
+    light = d.get("light", False)
+    css = CSS % dict(w=w, h=h, lat=lat, ar=ar, ink=d["ink"], bgcss=bgcss, accent=d["accent"],
+                     mop=".22" if light else ".14", chipbg="rgba(0,0,0,.05)" if light else "rgba(255,255,255,.10)",
                      muted=d["muted"], pad="250px 100px 340px" if tall else "80px", padf="214px 70px 304px" if tall else "64px",
                      logo=132 if tall else 116, gap=44 if tall else 34,
-                     mw=820, ms=520 if tall else 380, mt=260 if tall else 170, wordsize=wordsize)
+                     mw=820, ms=440 if tall else 300, mt=250 if tall else 150, wordsize=wordsize)
     motif = f'<div class="motif">{d["motif_svg"]}</div>' if d["motif_svg"] else ""
     return (f'<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="{FONT_URL}">'
             f'<style>{css}</style></head><body class="{d["layout"]}">{motif}<div class="wrap">{body}</div></body></html>')
