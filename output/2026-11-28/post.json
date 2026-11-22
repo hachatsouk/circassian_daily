@@ -1,0 +1,79 @@
+{
+ "date": "2026-11-28",
+ "proverb": {
+  "id": 149,
+  "dialect": "kabardian",
+  "circassian": "ГуфӀэгъуэрэ гузэвэгъуэрэ зэпылъщ",
+  "latin": "Guf'eghwere guzeveghwere zepılhsch",
+  "english": "Joy and sorrow are tied to one another.",
+  "arabic": "الفرح والهمّ مربوطان أحدهما بالآخر.",
+  "theme": "Life, time & fate",
+  "source": "Qardenghwsch' & Jaimoukha, Circassian Proverbs & Sayings (2009)",
+  "other_dialect_form": ""
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "ГуфӀэгъуэрэ",
+    "en": "joy, and",
+    "ar": "الفرح، و",
+    "note_en": "Noun ГуфӀэгъуэ (joy) with the linking suffix -рэ, meaning \"and\".",
+    "note_ar": "الاسم ГуфӀэгъуэ (الفرح) مع اللاحقة الرابطة -рэ بمعنى «و».",
+    "unsure": false
+   },
+   {
+    "cyr": "гузэвэгъуэрэ",
+    "en": "sorrow, worry, and",
+    "ar": "الهمّ والحزن، و",
+    "note_en": "Noun гузэвэгъуэ (anxiety, distress) with the suffix -рэ, meaning \"and\".",
+    "note_ar": "الاسم гузэвэгъуэ (القلق، الضيق) مع اللاحقة -рэ بمعنى «و».",
+    "unsure": false
+   },
+   {
+    "cyr": "зэпылъщ",
+    "en": "are tied to each other",
+    "ar": "مربوطان أحدهما بالآخر",
+    "note_en": "Verb with the reciprocal prefix зэ- (one another) and the ending -щ (is/are).",
+    "note_ar": "فعل بالسابقة التبادلية зэ- (بعضهما ببعض) وبالنهاية -щ (هو/هما).",
+    "unsure": true
+   }
+  ],
+  "meaning_en": "Happiness and grief are bound together in life, and neither comes entirely alone. The proverb invites us to stay humble in good times and hopeful in hard ones.",
+  "meaning_ar": "الفرح والحزن مرتبطان في الحياة، ولا يأتي أحدهما وحده تمامًا. يدعونا المثل إلى التواضع في أوقات الخير والأمل في أوقات الشدة.",
+  "caption": "ГуфӀэгъуэрэ гузэвэгъуэрэ зэпылъщ\n\"Joy and sorrow are tied to one another.\" Like sun and moon, good days and hard days follow each other. Stay humble in joy and hopeful in sorrow.\n\nالفرح والهمّ مربوطان أحدهما بالآخر. كالشمس والقمر، تتعاقب أيام الفرح وأيام الحزن. فلنتواضع في الفرح ونتمسك بالأمل في الحزن.",
+  "hashtags": [
+   "CircassianProverbs",
+   "Circassian",
+   "Adyghe",
+   "Kabardian",
+   "ProverbOfTheDay",
+   "LifeAndFate",
+   "الشركس",
+   "أمثال_شركسية",
+   "حكمة_اليوم",
+   "الأديغة",
+   "адыгэ_псалъэжь",
+   "адыгэбзэ"
+  ],
+  "design": {
+   "bg": "#1f2a44",
+   "bg2": "#2e3a5c",
+   "ink": "#f5efe0",
+   "accent": "#e0a84a",
+   "muted": "#b8c0d4",
+   "layout": "centered",
+   "font": "serif",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\"><g stroke=\"#e0a84a\" stroke-width=\"6\" stroke-linecap=\"round\" fill=\"none\"><line x1=\"180\" y1=\"200\" x2=\"198\" y2=\"200\"/><line x1=\"60\" y1=\"200\" x2=\"42\" y2=\"200\"/><line x1=\"120\" y1=\"260\" x2=\"120\" y2=\"278\"/><line x1=\"120\" y1=\"140\" x2=\"120\" y2=\"122\"/><line x1=\"162.4\" y1=\"242.4\" x2=\"175.2\" y2=\"255.2\"/><line x1=\"77.6\" y1=\"242.4\" x2=\"64.8\" y2=\"255.2\"/><line x1=\"77.6\" y1=\"157.6\" x2=\"64.8\" y2=\"144.8\"/><line x1=\"162.4\" y1=\"157.6\" x2=\"175.2\" y2=\"144.8\"/></g><circle cx=\"120\" cy=\"200\" r=\"45\" fill=\"#e0a84a\"/><circle cx=\"290\" cy=\"200\" r=\"48\" fill=\"#b8c0d4\"/><circle cx=\"308\" cy=\"188\" r=\"42\" fill=\"#2e3a5c\"/><path d=\"M120 110 Q205 40 290 110\" fill=\"none\" stroke=\"#f5efe0\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-dasharray=\"2 12\"/><g fill=\"none\" stroke-width=\"9\"><circle cx=\"170\" cy=\"320\" r=\"38\" stroke=\"#e0a84a\"/><circle cx=\"230\" cy=\"320\" r=\"38\" stroke=\"#b8c0d4\"/></g></svg>"
+  }
+ },
+ "caption": "ГуфӀэгъуэрэ гузэвэгъуэрэ зэпылъщ\n\nالفرح والهمّ مربوطان أحدهما بالآخر.\nJoy and sorrow are tied to one another.\n\nГуфӀэгъуэрэ гузэвэгъуэрэ зэпылъщ\n\"Joy and sorrow are tied to one another.\" Like sun and moon, good days and hard days follow each other. Stay humble in joy and hopeful in sorrow.\n\nالفرح والهمّ مربوطان أحدهما بالآخر. كالشمس والقمر، تتعاقب أيام الفرح وأيام الحزن. فلنتواضع في الفرح ونتمسك بالأمل في الحزن.\n\nKabardian dialect (East Circassian) · اللهجة القباردية (الشركسية الشرقية)\n\n#CircassianProverbs #Circassian #Adyghe #Kabardian #ProverbOfTheDay #LifeAndFate #الشركس #أمثال_شركسية #حكمة_اليوم #الأديغة #адыгэ_псалъэжь #адыгэбзэ",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg",
+  "slide_05.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}

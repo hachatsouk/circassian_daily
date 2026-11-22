@@ -1,0 +1,70 @@
+{
+ "date": "2026-11-25",
+ "proverb": {
+  "id": 1027,
+  "dialect": "adyghe",
+  "circassian": "Узэмыджэрэр къыоджэжьырэп",
+  "latin": "Uzemıjerer qıojezchırep",
+  "english": "The one you do not invite does not invite you.",
+  "arabic": "من لا تدعوه لا يدعوك.",
+  "theme": "Friendship & enmity",
+  "source": "Çerkes Atasözleri [Адыгэ ГущыӀэжъхэр-Псалъэжьхэр], e-book, Adana, 2023, ISBN 978-605-65691-2-8 (PDF supplied by MA)",
+  "other_dialect_form": ""
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "Узэмыджэрэр",
+    "en": "the one you don't invite",
+    "ar": "الذي لا تدعوه",
+    "note_en": "From джэн 'to call, invite' with the negative prefix мы- and the nominal ending -р, giving 'the one who is not invited by you'.",
+    "note_ar": "من الجذر «джэн» (دعا) مع أداة النفي «мы-» وعلامة الاسم «-р»، أي «الذي لا تدعوه».",
+    "unsure": true
+   },
+   {
+    "cyr": "къыоджэжьырэп",
+    "en": "does not invite you back",
+    "ar": "لا يدعوك بالمقابل",
+    "note_en": "Verb джэжьын 'to call back, reciprocate' with къы- (toward), the 'you' marker о-, and the negative ending -п.",
+    "note_ar": "فعل «джэжьын» (يرد الدعوة) مع «къы-» و«о-» (أنتَ) ولاحقة النفي «-п».",
+    "unsure": true
+   }
+  ],
+  "meaning_en": "Hospitality and good relations are reciprocal: if you never reach out to someone, you can't expect them to reach out to you. A bond has to be tended from both sides.",
+  "meaning_ar": "الضيافة والعلاقات الطيبة تبادلية: من لا تبادر إليه لا تنتظر منه المبادرة. فالودّ يحتاج إلى رعاية من الطرفين.",
+  "caption": "Узэмыджэрэр къыоджэжьырэп\n\"The one you do not invite does not invite you.\" Friendship grows when both sides open the door. Who will you invite this week?\n\nمن لا تدعوه لا يدعوك. الصداقة تكبر حين يفتح الطرفان الباب. فمن ستدعو هذا الأسبوع؟",
+  "hashtags": [
+   "CircassianProverbs",
+   "Adyghe",
+   "Circassian",
+   "Adyga",
+   "Proverbs",
+   "Friendship",
+   "Hospitality",
+   "الشركس",
+   "أمثال_شركسية",
+   "حكمة",
+   "الصداقة",
+   "АдыгэпсЭ"
+  ],
+  "design": {
+   "bg": "#1f3a34",
+   "bg2": "#14271f",
+   "ink": "#f4ead5",
+   "accent": "#d9a441",
+   "muted": "#b9c4b5",
+   "layout": "framed",
+   "font": "serif",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"200\" cy=\"200\" r=\"170\" fill=\"none\" stroke=\"#d9a441\" stroke-width=\"3\"/><circle cx=\"200\" cy=\"200\" r=\"155\" fill=\"none\" stroke=\"#b9c4b5\" stroke-width=\"1.5\"/><path d=\"M120 330 V190 A80 80 0 0 1 280 190 V330 Z\" fill=\"#14271f\" stroke=\"#f4ead5\" stroke-width=\"6\"/><path d=\"M150 330 V195 A50 50 0 0 1 250 195 V330 Z\" fill=\"#d9a441\"/><rect x=\"165\" y=\"282\" width=\"70\" height=\"8\" fill=\"#14271f\"/><line x1=\"172\" y1=\"290\" x2=\"172\" y2=\"330\" stroke=\"#14271f\" stroke-width=\"5\"/><line x1=\"228\" y1=\"290\" x2=\"228\" y2=\"330\" stroke=\"#14271f\" stroke-width=\"5\"/><path d=\"M176 282 L180 262 H192 L196 282 Z\" fill=\"#f4ead5\"/><path d=\"M204 282 L208 262 H220 L224 282 Z\" fill=\"#f4ead5\"/><line x1=\"90\" y1=\"330\" x2=\"310\" y2=\"330\" stroke=\"#f4ead5\" stroke-width=\"6\"/><polygon points=\"200,52 218,78 200,104 182,78\" fill=\"#d9a441\"/><polygon points=\"200,64 209,78 200,92 191,78\" fill=\"#14271f\"/><polygon points=\"92,200 104,214 92,228 80,214\" fill=\"#d9a441\"/><polygon points=\"308,200 320,214 308,228 296,214\" fill=\"#d9a441\"/><polyline points=\"110,350 150,350 170,340 230,340 250,350 290,350\" fill=\"none\" stroke=\"#b9c4b5\" stroke-width=\"3\"/></svg>"
+  }
+ },
+ "caption": "Узэмыджэрэр къыоджэжьырэп\n\nمن لا تدعوه لا يدعوك.\nThe one you do not invite does not invite you.\n\nУзэмыджэрэр къыоджэжьырэп\n\"The one you do not invite does not invite you.\" Friendship grows when both sides open the door. Who will you invite this week?\n\nمن لا تدعوه لا يدعوك. الصداقة تكبر حين يفتح الطرفان الباب. فمن ستدعو هذا الأسبوع؟\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#CircassianProverbs #Adyghe #Circassian #Adyga #Proverbs #Friendship #Hospitality #الشركس #أمثال_شركسية #حكمة #الصداقة #АдыгэпсЭ",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}

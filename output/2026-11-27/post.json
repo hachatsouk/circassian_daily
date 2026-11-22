@@ -1,0 +1,115 @@
+{
+ "date": "2026-11-27",
+ "proverb": {
+  "id": 525,
+  "dialect": "adyghe",
+  "circassian": "Мэл Ӏэхъогъум икӀодыжьыгъом пчэн къуир пащэ фэхъу",
+  "latin": "Mel 'ekhoghum ik'odızchıghom pchen qwir pasche fekhu",
+  "english": "When the flock is doomed, the mangy goat becomes its leader.",
+  "arabic": "إذا حان هلاك القطيع صارت العنزة الجرباء قائدته.",
+  "theme": "Life, time & fate",
+  "source": "Çerkes Atasözleri [Адыгэ ГущыӀэжъхэр-Псалъэжьхэр], e-book, Adana, 2023, ISBN 978-605-65691-2-8 (PDF supplied by MA)",
+  "other_dialect_form": "Мэл гуартэм и кӀуэдыжыгъуэм бжэн къуийр пашэ яхуохъу"
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "Мэл",
+    "en": "the flock, sheep",
+    "ar": "القطيع، الغنم",
+    "note_en": "Base noun for small livestock, here in the absolute case.",
+    "note_ar": "اسم أساسي للماشية الصغيرة، هنا في الحالة المطلقة.",
+    "unsure": false
+   },
+   {
+    "cyr": "Ӏэхъогъум",
+    "en": "doom, ruin, misfortune",
+    "ar": "الهلاك، النكبة",
+    "note_en": "Seems to end in the oblique case -м; the root is uncertain.",
+    "note_ar": "يبدو أنه ينتهي بعلامة الحالة المائلة -м، لكن الجذر غير مؤكد.",
+    "unsure": true
+   },
+   {
+    "cyr": "икӀодыжьыгъом",
+    "en": "when it is lost, perishing",
+    "ar": "حين يضيع أو يهلك",
+    "note_en": "Verb root кӀод 'perish, go missing', with the temporal suffix -м 'when'.",
+    "note_ar": "الجذر кӀод بمعنى يهلك أو يضيع، مع اللاحقة الزمنية -м بمعنى «حين».",
+    "unsure": true
+   },
+   {
+    "cyr": "пчэн",
+    "en": "the billy goat",
+    "ar": "تيس الماعز",
+    "note_en": "Noun for a male goat.",
+    "note_ar": "اسم للذكر من الماعز.",
+    "unsure": false
+   },
+   {
+    "cyr": "къуир",
+    "en": "mangy, scabby",
+    "ar": "أجرب",
+    "note_en": "Describes the goat; the form is uncertain.",
+    "note_ar": "صفة للتيس؛ والصيغة غير مؤكدة.",
+    "unsure": true
+   },
+   {
+    "cyr": "пащэ",
+    "en": "leader, chief",
+    "ar": "قائد، رئيس",
+    "note_en": "Noun meaning 'head, chief'.",
+    "note_ar": "اسم بمعنى رأس القوم أو رئيسهم.",
+    "unsure": false
+   },
+   {
+    "cyr": "фэхъу",
+    "en": "becomes (for them)",
+    "ar": "يصير لهم",
+    "note_en": "Verb хъу 'become' with the benefactive prefix фэ-.",
+    "note_ar": "الفعل хъу بمعنى يصير مع بادئة النفع фэ-.",
+    "unsure": false
+   }
+  ],
+  "meaning_en": "When a group is heading for ruin, the worst candidate ends up in charge. Decline often shows in who is chosen to lead.",
+  "meaning_ar": "حين تتجه الجماعة نحو الهلاك يتصدّر أسوأ أفرادها القيادة. وكثيرًا ما يظهر الانحدار فيمن يُختار ليقود.",
+  "caption": "When the flock is doomed, the mangy goat becomes its leader. 🐐\nA Circassian proverb about fate and how failing times raise the wrong leaders.\n\nإذا حان هلاك القطيع صارت العنزة الجرباء قائدته.\nمثل شركسي عن القدر، وعن الأزمنة التي ترفع إلى القيادة من لا يستحقها.",
+  "hashtags": [
+   "CircassianProverbs",
+   "Adyghe",
+   "Circassian",
+   "ProverbOfTheDay",
+   "FolkWisdom",
+   "Caucasus",
+   "الأمثال_الشركسية",
+   "شركس",
+   "حكمة",
+   "أمثال",
+   "АдыгэхэмЯУсэхэр",
+   "Адыгабзэ"
+  ],
+  "design": {
+   "bg": "#1f2a30",
+   "bg2": "#33403a",
+   "ink": "#f4efe4",
+   "accent": "#d9a441",
+   "muted": "#b8bfb2",
+   "layout": "split",
+   "font": "serif",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"110\" cy=\"90\" r=\"38\" fill=\"#d9a441\"/><circle cx=\"110\" cy=\"90\" r=\"52\" fill=\"none\" stroke=\"#b8bfb2\" stroke-width=\"2\"/><circle cx=\"110\" cy=\"90\" r=\"64\" fill=\"none\" stroke=\"#b8bfb2\" stroke-width=\"1\"/><path d=\"M0 400 L0 322 Q200 262 400 322 L400 400 Z\" fill=\"#d9a441\"/><g stroke=\"#f4efe4\" stroke-width=\"9\" stroke-linecap=\"round\"><line x1=\"168\" y1=\"255\" x2=\"166\" y2=\"292\"/><line x1=\"188\" y1=\"258\" x2=\"190\" y2=\"294\"/><line x1=\"222\" y1=\"258\" x2=\"220\" y2=\"294\"/><line x1=\"242\" y1=\"255\" x2=\"246\" y2=\"290\"/></g><ellipse cx=\"205\" cy=\"232\" rx=\"58\" ry\"30\" fill=\"#f4efe4\"/><ellipse cx=\"205\" cy=\"232\" rx=\"58\" ry=\"30\" fill=\"#f4efe4\"/><polygon points=\"245,218 268,168 292,178 266,244\" fill=\"#f4efe4\"/><ellipse cx=\"294\" cy=\"180\" rx=\"18\" ry=\"11\" fill=\"#f4efe4\"/><polygon points=\"302,188 298,218 312,192\" fill=\"#f4efe4\"/><polygon points=\"150,218 134,200 154,206\" fill=\"#f4efe4\"/><path d=\"M282 170 Q264 128 236 126\" fill=\"none\" stroke=\"#f4efe4\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M290 169 Q282 136 258 122\" fill=\"none\" stroke=\"#f4efe4\" stroke-width=\"6\" stroke-linecap=\"round\"/><circle cx=\"300\" cy=\"177\" r=\"2.5\" fill=\"#1f2a30\"/><g fill=\"#1f2a30\"><ellipse cx=\"70\" cy=\"340\" rx=\"22\" ry=\"14\"/><circle cx=\"90\" cy=\"344\" r=\"8\"/><ellipse cx=\"150\" cy=\"362\" rx=\"22\" ry=\"14\"/><circle cx=\"170\" cy=\"366\" r=\"8\"/><ellipse cx=\"250\" cy=\"352\" rx=\"22\" ry=\"14\"/><circle cx=\"270\" cy=\"356\" r=\"8\"/><ellipse cx=\"335\" cy=\"340\" rx=\"22\" ry=\"14\"/><circle cx=\"355\" cy=\"344\" r=\"8\"/></g><g fill=\"none\" stroke=\"#b8bfb2\" stroke-width=\"2\"><polyline points=\"20,30 40,50 20,70 40,90\"/><polyline points=\"360,30 380,50 360,70 380,90\"/></g></svg>"
+  }
+ },
+ "caption": "Мэл Ӏэхъогъум икӀодыжьыгъом пчэн къуир пащэ фэхъу\n\nإذا حان هلاك القطيع صارت العنزة الجرباء قائدته.\nWhen the flock is doomed, the mangy goat becomes its leader.\n\nWhen the flock is doomed, the mangy goat becomes its leader. 🐐\nA Circassian proverb about fate and how failing times raise the wrong leaders.\n\nإذا حان هلاك القطيع صارت العنزة الجرباء قائدته.\nمثل شركسي عن القدر، وعن الأزمنة التي ترفع إلى القيادة من لا يستحقها.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#CircassianProverbs #Adyghe #Circassian #ProverbOfTheDay #FolkWisdom #Caucasus #الأمثال_الشركسية #شركس #حكمة #أمثال #АдыгэхэмЯУсэхэр #Адыгабзэ",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg",
+  "slide_05.jpg",
+  "slide_06.jpg",
+  "slide_07.jpg",
+  "slide_08.jpg",
+  "slide_09.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}

@@ -1,0 +1,70 @@
+{
+ "date": "2026-11-26",
+ "proverb": {
+  "id": 1065,
+  "dialect": "kabardian",
+  "circassian": "ТэмакъкӀэщӀыр хущӀогъуэж",
+  "latin": "Temaqk'esch'ır xusch'oghwezh",
+  "english": "The hot-tempered man will come to regret it.",
+  "arabic": "سريعُ الغضب يندم.",
+  "theme": "Honour & character",
+  "source": "Кудаева З. Ж., «Адыгская паремия», учебное пособие, Нальчик: КБГУ (PDF supplied by MA)",
+  "other_dialect_form": ""
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "ТэмакъкӀэщӀыр",
+    "en": "the short-tempered man",
+    "ar": "الرجل سريع الغضب",
+    "note_en": "Likely 'tamaq' (throat, temper) + кӀэщӀ (short) + the nominative ending -ыр, literally 'short-throated'.",
+    "note_ar": "غالبًا من «تامَق» (الحلق/المزاج) + «كِشّ» (قصير) + علامة الفاعل «-ыр»، أي «قصير المزاج».",
+    "unsure": true
+   },
+   {
+    "cyr": "хущӀогъуэж",
+    "en": "will come to regret it",
+    "ar": "سيندم على ذلك",
+    "note_en": "A verb built on щӀогъуэж- ('to regret') with a prefix ху- pointing to the cause; the exact analysis is uncertain.",
+    "note_ar": "فعل مبني على «شُوغْوَج» (يندم) مع بادئة «ху-» تشير إلى السبب؛ والتحليل الدقيق غير مؤكد.",
+    "unsure": true
+   }
+  ],
+  "meaning_en": "Anger acts faster than thought, and what is said or done in a rage is often paid for later. A person of honour keeps a cool head so that there is nothing to regret.",
+  "meaning_ar": "الغضب أسرع من التفكير، وما يُقال أو يُفعل في لحظة الغضب كثيرًا ما يُدفع ثمنه لاحقًا. والإنسان الكريم يحتفظ برأس هادئ كي لا يندم.",
+  "caption": "Today's Circassian proverb 🔥\n\nТэмакъкӀэщӀыр хущӀогъуэж\n\"The hot-tempered man will come to regret it.\"\n\nA flame burns bright and fast, but it leaves only ash. Calm is the strength of a person of honour.\n\nمثل شركسي اليوم 🔥\n\n«سريعُ الغضب يندم.»\n\nاللهب يشتعل بسرعة ولا يترك إلا الرماد، والهدوء قوة أهل الكرامة.",
+  "hashtags": [
+   "CircassianProverbs",
+   "Circassian",
+   "Adyghe",
+   "Kabardian",
+   "ProverbOfTheDay",
+   "WisdomQuotes",
+   "أمثال_شركسية",
+   "الشركس",
+   "حكمة_اليوم",
+   "الأدغة",
+   "АдыгэЛъэпкъ",
+   "АдыгэбзэЖыг"
+  ],
+  "design": {
+   "bg": "#1f1a17",
+   "bg2": "#3a2a22",
+   "ink": "#f6ead9",
+   "accent": "#e0702f",
+   "muted": "#c9b49c",
+   "layout": "centered",
+   "font": "serif",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"200\" cy=\"200\" r=\"180\" fill=\"none\" stroke=\"#c9b49c\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"200\" r=\"166\" fill=\"none\" stroke=\"#3a2a22\" stroke-width=\"6\"/><path d=\"M200 50 C232 115 295 155 285 240 C277 308 235 338 200 338 C162 338 118 308 118 240 C118 188 158 168 170 118 C186 142 192 98 200 50 Z\" fill=\"#e0702f\"/><path d=\"M200 170 C222 215 254 240 244 288 C238 318 218 330 200 330 C178 330 156 316 156 284 C156 248 190 228 200 170 Z\" fill=\"#f6ead9\"/><path d=\"M200 245 C213 268 226 280 222 302 C219 316 210 322 200 322 C190 322 180 314 180 300 C180 282 196 270 200 245 Z\" fill=\"#e0702f\"/><rect x=\"110\" y=\"336\" width=\"180\" height=\"16\" rx=\"8\" fill=\"#c9b49c\"/><rect x=\"130\" y=\"352\" width=\"140\" height=\"14\" rx=\"7\" fill=\"#c9b49c\"/><line x1=\"90\" y1=\"372\" x2=\"310\" y2=\"372\" stroke=\"#c9b49c\" stroke-width=\"3\"/><circle cx=\"310\" cy=\"150\" r=\"5\" fill=\"#e0702f\"/><circle cx=\"326\" cy=\"112\" r=\"4\" fill=\"#c9b49c\"/><circle cx=\"90\" cy=\"170\" r=\"4\" fill=\"#e0702f\"/><circle cx=\"74\" cy=\"128\" r=\"3\" fill=\"#c9b49c\"/><circle cx=\"338\" cy=\"76\" r=\"3\" fill=\"#c9b49c\"/><polyline points=\"150,386 175,380 200,386 225,380 250,386\" fill=\"none\" stroke=\"#c9b49c\" stroke-width=\"2\"/></svg>"
+  }
+ },
+ "caption": "ТэмакъкӀэщӀыр хущӀогъуэж\n\nسريعُ الغضب يندم.\nThe hot-tempered man will come to regret it.\n\nToday's Circassian proverb 🔥\n\nТэмакъкӀэщӀыр хущӀогъуэж\n\"The hot-tempered man will come to regret it.\"\n\nA flame burns bright and fast, but it leaves only ash. Calm is the strength of a person of honour.\n\nمثل شركسي اليوم 🔥\n\n«سريعُ الغضب يندم.»\n\nاللهب يشتعل بسرعة ولا يترك إلا الرماد، والهدوء قوة أهل الكرامة.\n\nKabardian dialect (East Circassian) · اللهجة القباردية (الشركسية الشرقية)\n\n#CircassianProverbs #Circassian #Adyghe #Kabardian #ProverbOfTheDay #WisdomQuotes #أمثال_شركسية #الشركس #حكمة_اليوم #الأدغة #АдыгэЛъэпкъ #АдыгэбзэЖыг",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}
