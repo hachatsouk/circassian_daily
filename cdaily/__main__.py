@@ -151,10 +151,10 @@ def cancel_pending(args):
         bfile = folder / "buffer.json"
         ids = json.loads(bfile.read_text(encoding="utf-8")) if bfile.exists() else {}
         for name, pid in list(ids.items()):
-            pub.delete_post(pid)
+            if pub.delete_post(pid):
+                print(f"{day}: removed the queued {name} from Buffer")
             del ids[name]
-            bfile.write_text(json.dumps(ids, indent=1), encoding="utf-8")     # progress saved after each delete
-            print(f"{day}: removed the queued {name} from Buffer")
+            bfile.write_text(json.dumps(ids, indent=1), encoding="utf-8")     # progress saved after each piece
         for k, v in list(state["posted"].items()):
             if v == day:
                 del state["posted"][k]

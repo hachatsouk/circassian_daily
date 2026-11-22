@@ -88,7 +88,10 @@ DELETE = """mutation($id: PostId!) { deletePost(input: {id: $id}) { __typename .
 
 
 def delete_post(post_id):
-    """Remove a post that is still waiting in Buffer's queue. Stops with an error if Buffer refuses."""
+    """Remove a post that is still waiting in Buffer's queue. Returns False when Buffer refuses
+    (the post was already published or already deleted); a refusal never changes anything."""
     res = gql(DELETE, {"id": post_id})["deletePost"]
     if res.get("message"):
-        raise SystemExit(f"Buffer would not delete post {post_id}: {res['message']}")
+        print(f"Buffer did not delete {post_id} ({res['message']}): already published or already gone.")
+        return False
+    return True
