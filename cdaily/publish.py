@@ -82,3 +82,13 @@ def _create(kind, text, assets, due_at):
     if "post" not in res:
         raise SystemExit(f"Buffer refused the {kind}: {res.get('message', res)}")
     return res["post"]["id"]
+
+
+DELETE = """mutation($id: PostId!) { deletePost(input: {id: $id}) { __typename ... on MutationError { message } } }"""
+
+
+def delete_post(post_id):
+    """Remove a post that is still waiting in Buffer's queue. Stops with an error if Buffer refuses."""
+    res = gql(DELETE, {"id": post_id})["deletePost"]
+    if res.get("message"):
+        raise SystemExit(f"Buffer would not delete post {post_id}: {res['message']}")

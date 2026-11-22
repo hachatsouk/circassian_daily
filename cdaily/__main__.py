@@ -135,6 +135,37 @@ def publish_day(args, day):
     print(f"{day}: sent to Buffer ({'scheduled ' + when if when else 'share now'}):", ids)
 
 
+def cancel_pending(args):
+    """Days listed in data/cancel.txt (one YYYY-MM-DD per line) are taken back out of Buffer's queue,
+    so the normal steps afterwards remake them with the current code. Only future days, never one already posted."""
+    f = ROOT / "data" / "cancel.txt"
+    days_ = [l.strip() for l in f.read_text(encoding="utf-8").splitlines() if l.strip()] if f.exists() else []
+    if not days_:
+        print("Nothing to cancel.")
+        return
+    state = load_state()
+    for day in days_:
+        if day <= today():
+            raise SystemExit(f"{day} is today or past; refusing to cancel it (it may already be on Instagram).")
+        folder = OUT / day
+        bfile = folder / "buffer.json"
+        ids = json.loads(bfile.read_text(encoding="utf-8")) if bfile.exists() else {}
+        for name, pid in list(ids.items()):
+            pub.delete_post(pid)
+            del ids[name]
+            bfile.write_text(json.dumps(ids, indent=1), encoding="utf-8")     # progress saved after each delete
+            print(f"{day}: removed the queued {name} from Buffer")
+        for k, v in list(state["posted"].items()):
+            if v == day:
+                del state["posted"][k]
+        save_state(state)
+        if folder.exists():
+            (OUT / "cancelled").mkdir(exist_ok=True)
+            folder.replace(OUT / "cancelled" / day)
+    f.write_text("", encoding="utf-8")
+    print("Cancelled:", ", ".join(days_))
+
+
 def set_env(values):
     """Write KEY=VALUE pairs into .env, keeping the other lines."""
     f = ROOT / ".env"
@@ -215,7 +246,7 @@ def github(args):
 def main():
     load_env()
     ap = argparse.ArgumentParser(prog="cdaily", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("command", choices=["channels", "prepare", "publish", "run", "setup", "github", "check"])
+    ap.add_argument("command", choices=["channels", "prepare", "publish", "run", "setup", "github", "check", "cancel"])
     ap.add_argument("--date"); ap.add_argument("--id", type=int)
     ap.add_argument("--mock", action="store_true"); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--force", action="store_true")
@@ -224,6 +255,8 @@ def main():
     if args.command == "channels":
         for ch in pub.list_channels():
             print(f'{ch["id"]}  {ch["service"]:<12} {ch["name"]}')
+    elif args.command == "cancel":
+        cancel_pending(args)
     elif args.command == "check":
         done = set(load_state()["posted"].values())
         start = dt.date.fromisoformat(today())
