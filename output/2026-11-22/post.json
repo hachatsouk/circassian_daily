@@ -1,0 +1,106 @@
+{
+ "date": "2026-11-22",
+ "proverb": {
+  "id": 259,
+  "dialect": "kabardian",
+  "circassian": "Зи жьэ зэӀумыщӀэм я гухэлъ зэрыщӀэркъым",
+  "latin": "Zi zche ze'umısch'em ya guxelh zerısch'erqım",
+  "english": "Those whose mouths never meet do not know each other's hearts.",
+  "arabic": "من لا تلتقي أفواههم لا يعرفون ما في قلوب بعضهم.",
+  "theme": "Speech & silence",
+  "source": "Адыгэ псалъэжьхэр, section on counsel, upbringing and knowledge (circassian.ucoz.com)",
+  "other_dialect_form": "Ажэ зэӀумыкӀэу ягухэлъ зэрэшӀэрэп"
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "Зи",
+    "en": "whose",
+    "ar": "الذين / الذي له",
+    "note_en": "Relative possessive prefix meaning 'whose'.",
+    "note_ar": "بادئة ملكية موصولة بمعنى «الذي له».",
+    "unsure": false
+   },
+   {
+    "cyr": "жьэ",
+    "en": "mouth",
+    "ar": "فم",
+    "note_en": "Noun meaning 'mouth'; here it is the thing possessed.",
+    "note_ar": "اسم بمعنى «فم»، وهو هنا المملوك.",
+    "unsure": false
+   },
+   {
+    "cyr": "зэӀумыщӀэм",
+    "en": "who have not met together",
+    "ar": "الذين لم يلتقوا معًا",
+    "note_en": "Verb form with reciprocal зэ- and negative -мы-, ending in the -м marker; my best reading.",
+    "note_ar": "صيغة فعلية فيها زيادة التبادل зэ- والنفي -мы- وتنتهي بالعلامة -м، وهذا أفضل تفسير لدي.",
+    "unsure": true
+   },
+   {
+    "cyr": "я",
+    "en": "their",
+    "ar": "their = خاصتهم",
+    "note_en": "Third-person plural possessive 'their'.",
+    "note_ar": "ضمير ملكية للغائبين الجمع بمعنى «هم/خاصتهم».",
+    "unsure": false
+   },
+   {
+    "cyr": "гухэлъ",
+    "en": "heart, inner intention",
+    "ar": "القلب، النية الداخلية",
+    "note_en": "Noun built from гу ('heart'); it can mean inner thoughts or intentions.",
+    "note_ar": "اسم مشتق من гу («قلب»)، ويدل على الأفكار أو النوايا الداخلية.",
+    "unsure": true
+   },
+   {
+    "cyr": "зэрыщӀэркъым",
+    "en": "do not know each other",
+    "ar": "لا يعرفون بعضهم",
+    "note_en": "Verb with reciprocal зэ-, the root щӀэ ('know'), and negative -къым.",
+    "note_ar": "فعل فيه زيادة التبادل зэ- والجذر щӀэ («يعلم») والنفي -къым.",
+    "unsure": true
+   }
+  ],
+  "meaning_en": "People who never speak face to face cannot truly know what is in one another's hearts. Honest conversation, not silence or assumption, is how understanding begins.",
+  "meaning_ar": "الذين لا يتحدثون وجهًا لوجه لا يستطيعون أن يعرفوا حقًا ما في قلوب بعضهم. الحوار الصادق، لا الصمت ولا الظن، هو بداية التفاهم.",
+  "caption": "Zi zche ze'umısch'em ya guxelh zerısch'erqım.\n\nThose whose mouths never meet do not know each other's hearts. Real closeness begins when we speak to one another.\n\nمن لا تلتقي أفواههم لا يعرفون ما في قلوب بعضهم. القرب الحقيقي يبدأ حين نتحدث إلى بعضنا.\n\nWhom do you need to talk to today? | مع من تحتاج أن تتحدث اليوم؟",
+  "hashtags": [
+   "Circassian",
+   "Kabardian",
+   "Adyghe",
+   "CircassianProverbs",
+   "ProverbOfTheDay",
+   "SpeechAndSilence",
+   "адыгэ",
+   "Адыгэбзэ",
+   "شركسي",
+   "أمثال_شركسية",
+   "حكمة_اليوم",
+   "الشركس"
+  ],
+  "design": {
+   "bg": "#1f2a3a",
+   "bg2": "#2c3e50",
+   "ink": "#f5ecd9",
+   "accent": "#d9a441",
+   "muted": "#b8c0cc",
+   "layout": "centered",
+   "font": "serif",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><g><circle cx=\"120\" cy=\"150\" r=\"58\" fill=\"#2c3e50\" stroke=\"#b8c0cc\" stroke-width=\"4\"/><circle cx=\"280\" cy=\"150\" r=\"58\" fill=\"#2c3e50\" stroke=\"#b8c0cc\" stroke-width=\"4\"/><circle cx=\"142\" cy=\"128\" r=\"5\" fill=\"#f5ecd9\"/><circle cx=\"258\" cy=\"128\" r=\"5\" fill=\"#f5ecd9\"/><ellipse cx=\"152\" cy=\"172\" rx=\"10\" ry=\"5\" fill=\"#d9a441\"/><ellipse cx=\"248\" cy=\"172\" rx=\"10\" ry=\"5\" fill=\"#d9a441\"/><line x1=\"170\" y1=\"172\" x2=\"182\" y2=\"172\" stroke=\"#b8c0cc\" stroke-width=\"4\"/><line x1=\"194\" y1=\"172\" x2=\"206\" y2=\"172\" stroke=\"#b8c0cc\" stroke-width=\"4\"/><line x1=\"218\" y1=\"172\" x2=\"230\" y2=\"172\" stroke=\"#b8c0cc\" stroke-width=\"4\"/><path d=\"M120 335 C80 305 70 275 90 260 C105 250 118 257 120 270 C122 257 135 250 150 260 C170 275 160 305 120 335 Z\" fill=\"#d9a441\"/><path d=\"M280 335 C240 305 230 275 250 260 C265 250 278 257 280 270 C282 257 295 250 310 260 C330 275 320 305 280 335 Z\" fill=\"#d9a441\"/><line x1=\"170\" y1=\"300\" x2=\"230\" y2=\"300\" stroke=\"#f5ecd9\" stroke-width=\"3\"/><polygon points=\"200,288 212,300 200,312 188,300\" fill=\"#f5ecd9\"/><polyline points=\"60,380 100,365 140,380 180,365 220,380 260,365 300,380 340,365\" fill=\"none\" stroke=\"#b8c0cc\" stroke-width=\"3\"/></g></svg>"
+  }
+ },
+ "caption": "Зи жьэ зэӀумыщӀэм я гухэлъ зэрыщӀэркъым\n\nمن لا تلتقي أفواههم لا يعرفون ما في قلوب بعضهم.\nThose whose mouths never meet do not know each other's hearts.\n\nZi zche ze'umısch'em ya guxelh zerısch'erqım.\n\nThose whose mouths never meet do not know each other's hearts. Real closeness begins when we speak to one another.\n\nمن لا تلتقي أفواههم لا يعرفون ما في قلوب بعضهم. القرب الحقيقي يبدأ حين نتحدث إلى بعضنا.\n\nWhom do you need to talk to today? | مع من تحتاج أن تتحدث اليوم؟\n\nKabardian dialect (East Circassian) · اللهجة القباردية (الشركسية الشرقية)\n\n#Circassian #Kabardian #Adyghe #CircassianProverbs #ProverbOfTheDay #SpeechAndSilence #адыгэ #Адыгэбзэ #شركسي #أمثال_شركسية #حكمة_اليوم #الشركس",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg",
+  "slide_05.jpg",
+  "slide_06.jpg",
+  "slide_07.jpg",
+  "slide_08.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}
