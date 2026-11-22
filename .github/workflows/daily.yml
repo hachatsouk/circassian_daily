@@ -1,13 +1,12 @@
 name: Daily proverb
 on:
   schedule:
-    # GitHub sometimes starts scheduled runs late or drops one, so there are three chances each morning.
-    # The first run that gets through prepares the post and hands it to Buffer for 08:00 in Amman;
-    # the later ones see that today's post is done and stop.
+    # GitHub's timer is unreliable, so each run keeps a WEEK of posts queued in Buffer
+    # (each at 08:00 Amman on its own day). Missed runs then cost nothing: Buffer still posts.
     - cron: "17 2 * * *"       # 05:17 in Amman
     - cron: "23 3 * * *"       # 06:23 in Amman
     - cron: "41 4 * * *"       # 07:41 in Amman
-  workflow_dispatch: {}        # "Run workflow" button: always posts, straight away if 08:00 has passed
+  workflow_dispatch: {}        # "Run workflow" button: tops up the queue; today's post goes now if 08:00 has passed
 permissions:
   contents: write
 concurrency:
@@ -23,6 +22,7 @@ jobs:
       BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
       MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/output
       TIMEZONE: Asia/Amman
+      DAYS_AHEAD: "7"
       POST_TIME: "08:00"
     steps:
       - uses: actions/checkout@v4
@@ -32,7 +32,7 @@ jobs:
       - name: Already posted today?
         id: check
         if: github.event_name == 'schedule'
-        run: python -m cdaily check >> "$GITHUB_OUTPUT"
+        run: python -m cdaily check --days "$DAYS_AHEAD" >> "$GITHUB_OUTPUT"
       - name: Install tools
         if: steps.check.outputs.skip != 'true'
         run: |
@@ -41,7 +41,7 @@ jobs:
           sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: Prepare today's post
         if: steps.check.outputs.skip != 'true'
-        run: python -m cdaily prepare
+        run: python -m cdaily prepare --days "$DAYS_AHEAD"
       - name: Publish the media files
         if: steps.check.outputs.skip != 'true'
         run: |
@@ -52,7 +52,7 @@ jobs:
           git push
       - name: Send to Buffer
         if: steps.check.outputs.skip != 'true'
-        run: python -m cdaily publish
+        run: python -m cdaily publish --days "$DAYS_AHEAD"
       - name: Save what was posted
         if: steps.check.outputs.skip != 'true'
         run: |

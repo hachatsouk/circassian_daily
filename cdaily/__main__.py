@@ -6,7 +6,8 @@
   python -m cdaily run                 prepare, then publish
   python -m cdaily setup               ask for the keys, find the Instagram channel, make a test post locally
   python -m cdaily github              create the GitHub repository, store the secrets, switch on the daily run
-  python -m cdaily check               print skip=true if today's post has already been sent (used by the daily run)
+  python -m cdaily check --days 7      print skip=true if the queue already reaches 7 days ahead (used by the daily run)
+Add --days 7 to prepare/publish/run to queue a week of posts in Buffer, each at POST_TIME on its own day.
 Options: --date YYYY-MM-DD, --id N (a specific proverb), --mock (no Claude call), --dry-run (no Buffer call)
 """
 import argparse, datetime as dt, getpass, json, os, shutil, subprocess, sys
@@ -23,11 +24,35 @@ def posted_today():
     return today() in load_state()["posted"].values()
 
 
+def days(args):
+    """The dates to work on: --date (or today), and the following days when --days N is given."""
+    start = dt.date.fromisoformat(args.date or today())
+    return [(start + dt.timedelta(d)).isoformat() for d in range(max(1, args.days))]
+
+
+def planned_ids():
+    """Proverbs already prepared for some day (posted or waiting in Buffer)."""
+    ids = set()
+    for f in OUT.glob("*/post.json"):
+        try:
+            ids.add(int(json.loads(f.read_text(encoding="utf-8"))["proverb"]["id"]))
+        except Exception:
+            pass
+    return ids
+
+
 def prepare(args):
-    day = args.date or today()
+    for day in days(args):
+        if (OUT / day / "post.json").exists() and not args.force:
+            print(f"{day}: already prepared, keeping it.")
+            continue
+        prepare_day(args, day)
+
+
+def prepare_day(args, day):
     folder = OUT / day
     folder.mkdir(parents=True, exist_ok=True)
-    p = pick_proverb(load_state(), args.id)
+    p = pick_proverb(load_state(), args.id, exclude=planned_ids())
     c = ai.build_content(p, mock=args.mock)
     feed = render.slides(p, c, render.FEED)
     tall = render.slides(p, c, render.TALL)
@@ -53,20 +78,24 @@ def prepare(args):
     return post
 
 
-def due_at():
-    """Today's POST_TIME if it is still ahead of us, otherwise None (post now)."""
+def due_at(day):
+    """POST_TIME on that day if it is still ahead of us, otherwise None (post now)."""
     t = env("POST_TIME", "")
     if not t:
         return None
     tz = ZoneInfo(env("TIMEZONE", "Asia/Amman"))
     now = dt.datetime.now(tz)
     h, m = map(int, t.split(":"))
-    when = now.replace(hour=h, minute=m, second=0, microsecond=0)
+    when = dt.datetime.combine(dt.date.fromisoformat(day), dt.time(h, m), tz)
     return when.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ") if when > now + dt.timedelta(minutes=2) else None
 
 
 def publish(args):
-    day = args.date or today()
+    for day in days(args):
+        publish_day(args, day)
+
+
+def publish_day(args, day):
     folder = OUT / day
     f = folder / "post.json"
     if not f.exists():
@@ -75,7 +104,8 @@ def publish(args):
     state = load_state()
     pid = str(post["proverb"]["id"])
     if pid in state["posted"] and not args.force:
-        raise SystemExit(f"Proverb #{pid} was already posted on {state['posted'][pid]}. Use --force to post again.")
+        print(f"{day}: proverb #{pid} is already with Buffer ({state['posted'][pid]}), skipping.")
+        return
     base = env("MEDIA_BASE_URL", required=True).rstrip("/") + "/" + day + "/"
     slides = [base + s for s in post["slides"]]
     story, reel = base + post["story"], base + post["reel"]
@@ -83,7 +113,7 @@ def publish(args):
         print("Dry run. Would send to Buffer:\n carousel:", *slides, "\n reel:", reel, "\n story:", story, "\n\n" + post["caption"])
         return
     pub.wait_public(slides + [story, reel])
-    when = due_at()
+    when = due_at(day)
     alt = post["proverb"]["english"]
     ids = {
         "carousel": pub.create_post("post", post["caption"], [{"image": {"url": u, "metadata": {"altText": alt}}} for u in slides], when),
@@ -93,7 +123,7 @@ def publish(args):
     state["posted"][pid] = day
     save_state(state)
     (folder / "buffer.json").write_text(json.dumps(ids, indent=1), encoding="utf-8")
-    print(f"Sent to Buffer ({'scheduled ' + when if when else 'share now'}):", ids)
+    print(f"{day}: sent to Buffer ({'scheduled ' + when if when else 'share now'}):", ids)
 
 
 def set_env(values):
@@ -180,12 +210,14 @@ def main():
     ap.add_argument("--date"); ap.add_argument("--id", type=int)
     ap.add_argument("--mock", action="store_true"); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--days", type=int, default=1, help="also prepare/publish the following days (queue ahead in Buffer)")
     args = ap.parse_args()
     if args.command == "channels":
         for ch in pub.list_channels():
             print(f'{ch["id"]}  {ch["service"]:<12} {ch["name"]}')
     elif args.command == "check":
-        print("skip=true" if posted_today() else "skip=false")
+        ahead = (dt.date.fromisoformat(today()) + dt.timedelta(args.days - 1)).isoformat()
+        print("skip=true" if ahead in load_state()["posted"].values() else "skip=false")
     elif args.command == "setup":
         setup(args)
     elif args.command == "github":

@@ -43,14 +43,14 @@ def save_state(state):
     STATE.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
-def pick_proverb(state, proverb_id=None):
+def pick_proverb(state, proverb_id=None, exclude=()):
     """Next unposted proverb in a fixed shuffled order (so reruns pick the same one)."""
     rows = load_proverbs()
     if proverb_id:
         return next(r for r in rows if r["id"] == int(proverb_id))
     order = rows[:]
     random.Random(1864).shuffle(order)
-    done = set(map(int, state["posted"]))
+    done = set(map(int, state["posted"])) | set(exclude)
     for r in order:
         if r["id"] not in done:
             return r
