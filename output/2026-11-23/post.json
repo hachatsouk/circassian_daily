@@ -17,56 +17,58 @@
     "cyr": "АӀорэ",
     "en": "what people say",
     "ar": "ما يقوله الناس",
-    "note_en": "From the verb Ӏо 'say' with the plural agent prefix а- and the linking suffix -рэ.",
-    "note_ar": "من الفعل «Ӏо» (قال) مع بادئة الفاعل الجمع «а-» ولاحقة الربط «-рэ».",
+    "note_en": "Verb 'to say' (Ӏо) with a plural 'they' prefix and the participle ending -рэ, meaning 'what they say'.",
+    "note_ar": "فعل «قال» (Ӏо) مع بادئة الجمع «هم» ولاحقة الصفة الفعلية -рэ، أي «ما يقولونه».",
     "unsure": true
    },
    {
     "cyr": "пстэури",
     "en": "everything, all of it",
-    "ar": "كل شيء، جميعه",
-    "note_en": "From пстэуми 'all', with the absolutive ending -р.",
-    "note_ar": "من «пстэуми» (الكل) مع لاحقة الحالة المطلقة «-р».",
-    "unsure": true
+    "ar": "كل شيء، الجميع",
+    "note_en": "From пстэу 'all' plus the ending -ри, which marks the subject.",
+    "note_ar": "من пстэу «كل» مع اللاحقة -ри التي تحدد المسند إليه.",
+    "unsure": false
    },
    {
     "cyr": "шъыпкъэп",
     "en": "is not true",
     "ar": "ليس صحيحًا",
-    "note_en": "The adjective шъыпкъэ 'true' plus the negative suffix -п.",
-    "note_ar": "الصفة «шъыпкъэ» (صحيح) مع لاحقة النفي «-п».",
+    "note_en": "From шъыпкъэ 'true, truth' plus the negative ending -п.",
+    "note_ar": "من шъыпкъэ «حقيقة، صحيح» مع لاحقة النفي -п.",
     "unsure": false
    }
   ],
-  "meaning_en": "Not everything you hear is true, so weigh words before believing or repeating them. The proverb encourages careful judgment over trusting gossip.",
-  "meaning_ar": "ليس كل ما تسمعه صحيحًا، فزِن الكلام قبل أن تصدّقه أو تنقله. تدعو الحكمة إلى التروّي في الحكم بدل تصديق الشائعات.",
-  "caption": "АӀорэ пстэури шъыпкъэп\n\"Not everything people say is true.\" A Circassian reminder to listen carefully, question what you hear, and hold on to the truth.\n\nليس كل ما يُقال صحيحًا. حكمة شركسية تدعونا إلى التمهّل والتحقق من الكلام قبل تصديقه أو نقله.",
+  "meaning_en": "Not everything people say is true. Weigh what you hear before you believe it or repeat it.",
+  "meaning_ar": "ليس كل ما يقوله الناس صحيحًا. زِن ما تسمعه قبل أن تصدّقه أو تنقله.",
+  "caption": "АӀорэ пстэури шъыпкъэп\nNot everything people say is true. Weigh the words you hear before you carry them further.\n\nليس كل ما يُقال صحيحًا. زِن الكلام قبل أن تصدّقه أو تنقله.\n\nA Circassian proverb a day, from @circassian_daily.",
   "hashtags": [
    "Circassian",
    "Adyghe",
    "CircassianProverbs",
    "ProverbOfTheDay",
    "TruthAndLies",
-   "Adyghabze",
-   "شركس",
-   "الشركس",
+   "Caucasus",
+   "LearnCircassian",
    "أمثال_شركسية",
+   "الشركس",
    "حكمة_اليوم",
-   "اللغة_الأديغية",
-   "الصدق"
+   "الصدق",
+   "адыгэ"
   ],
   "design": {
-   "bg": "#1f2a36",
-   "bg2": "#34495e",
-   "ink": "#f5efe3",
-   "accent": "#e0a458",
-   "muted": "#b8c2cc",
-   "layout": "centered",
-   "font": "serif",
-   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"200\" cy=\"200\" r=\"120\" fill=\"none\" stroke=\"#b8c2cc\" stroke-width=\"2\"/><path d=\"M200 100 A100 100 0 0 0 200 300 Z\" fill=\"#f5efe3\"/><path d=\"M200 100 A100 100 0 0 1 200 300 Z\" fill=\"none\" stroke=\"#e0a458\" stroke-width=\"4\"/><line x1=\"200\" y1=\"90\" x2=\"200\" y2=\"310\" stroke=\"#e0a458\" stroke-width=\"4\"/><path d=\"M320 150 Q350 200 320 250\" fill=\"none\" stroke=\"#e0a458\" stroke-width=\"4\"/><path d=\"M340 125 Q385 200 340 275\" fill=\"none\" stroke=\"#b8c2cc\" stroke-width=\"3\"/><path d=\"M80 150 Q50 200 80 250\" fill=\"none\" stroke=\"#b8c2cc\" stroke-width=\"3\"/><polygon points=\"200,28 218,50 200,72 182,50\" fill=\"#e0a458\"/><polygon points=\"200,328 218,350 200,372 182,350\" fill=\"#e0a458\"/><polygon points=\"150,50 158,58 150,66 142,58\" fill=\"#b8c2cc\"/><polygon points=\"250,50 258,58 250,66 242,58\" fill=\"#b8c2cc\"/><polygon points=\"150,350 158,358 150,366 142,358\" fill=\"#b8c2cc\"/><polygon points=\"250,350 258,358 250,366 242,358\" fill=\"#b8c2cc\"/><circle cx=\"150\" cy=\"200\" r=\"8\" fill=\"#1f2a36\"/><circle cx=\"250\" cy=\"200\" r=\"8\" fill=\"#e0a458\"/></svg>"
+   "bg": "#232A63",
+   "bg2": "#0C0E2C",
+   "ink": "#EDEBFF",
+   "accent": "#9DBBFF",
+   "muted": "#B4B3D6",
+   "layout": "split",
+   "font": "display",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\"><g fill=\"currentColor\" stroke=\"currentColor\"><rect x=\"150\" y=\"340\" width=\"100\" height=\"14\" stroke-opacity=\"0\"/><rect x=\"194\" y=\"92\" width=\"12\" height=\"250\" stroke-opacity=\"0\"/><circle cx=\"200\" cy=\"82\" r=\"14\" stroke-opacity=\"0\"/><line x1=\"80\" y1=\"120\" x2=\"320\" y2=\"150\" stroke-width=\"8\" stroke-linecap=\"round\"/><circle cx=\"200\" cy=\"135\" r=\"10\" fill-opacity=\"0.5\" stroke-opacity=\"0\"/><line x1=\"80\" y1=\"120\" x2=\"40\" y2=\"220\" stroke-width=\"3\" fill-opacity=\"0\"/><line x1=\"80\" y1=\"120\" x2=\"120\" y2=\"220\" stroke-width=\"3\" fill-opacity=\"0\"/><path d=\"M30 220 Q80 270 130 220 Z\" fill-opacity=\"0.85\" stroke-opacity=\"0\"/><line x1=\"320\" y1=\"150\" x2=\"280\" y2=\"250\" stroke-width=\"3\" fill-opacity=\"0\"/><line x1=\"320\" y1=\"150\" x2=\"360\" y2=\"250\" stroke-width=\"3\" fill-opacity=\"0\"/><path d=\"M270 250 Q320 300 370 250 Z\" fill-opacity=\"0.85\" stroke-opacity=\"0\"/><ellipse cx=\"80\" cy=\"205\" rx=\"7\" ry=\"14\" fill-opacity=\"0.5\" stroke-opacity=\"0\"/><circle cx=\"320\" cy=\"235\" r=\"16\" fill-opacity=\"0.55\" stroke-opacity=\"0\"/><path d=\"M60 60 Q80 36 100 60\" stroke-width=\"3\" stroke-opacity=\"0.5\" fill-opacity=\"0\"/><path d=\"M45 68 Q80 22 115 68\" stroke-width=\"3\" stroke-opacity=\"0.35\" fill-opacity=\"0\"/><path d=\"M300 60 Q320 36 340 60\" stroke-width=\"3\" stroke-opacity=\"0.5\" fill-opacity=\"0\"/><path d=\"M285 68 Q320 22 355 68\" stroke-width=\"3\" stroke-opacity=\"0.35\" fill-opacity=\"0\"/><polygon points=\"60,376 76,364 92,376 76,388\" fill-opacity=\"0.6\" stroke-opacity=\"0\"/><polygon points=\"120,376 136,364 152,376 136,388\" fill-opacity=\"0.6\" stroke-opacity=\"0\"/><polygon points=\"248,376 264,364 280,376 264,388\" fill-opacity=\"0.6\" stroke-opacity=\"0\"/><polygon points=\"308,376 324,364 340,376 324,388\" fill-opacity=\"0.6\" stroke-opacity=\"0\"/></g></svg>",
+   "angle": 165,
+   "style": "indigo"
   }
  },
- "caption": "АӀорэ пстэури шъыпкъэп\n\nليس كل ما يُقال صحيحًا.\nNot everything people say is true.\n\nАӀорэ пстэури шъыпкъэп\n\"Not everything people say is true.\" A Circassian reminder to listen carefully, question what you hear, and hold on to the truth.\n\nليس كل ما يُقال صحيحًا. حكمة شركسية تدعونا إلى التمهّل والتحقق من الكلام قبل تصديقه أو نقله.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#Circassian #Adyghe #CircassianProverbs #ProverbOfTheDay #TruthAndLies #Adyghabze #شركس #الشركس #أمثال_شركسية #حكمة_اليوم #اللغة_الأديغية #الصدق",
+ "caption": "АӀорэ пстэури шъыпкъэп\n\nليس كل ما يُقال صحيحًا.\nNot everything people say is true.\n\nАӀорэ пстэури шъыпкъэп\nNot everything people say is true. Weigh the words you hear before you carry them further.\n\nليس كل ما يُقال صحيحًا. زِن الكلام قبل أن تصدّقه أو تنقله.\n\nA Circassian proverb a day, from @circassian_daily.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#Circassian #Adyghe #CircassianProverbs #ProverbOfTheDay #TruthAndLies #Caucasus #LearnCircassian #أمثال_شركسية #الشركس #حكمة_اليوم #الصدق #адыгэ",
  "slides": [
   "slide_01.jpg",
   "slide_02.jpg",

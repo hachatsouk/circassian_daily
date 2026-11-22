@@ -17,88 +17,91 @@
     "cyr": "Губгъом",
     "en": "in the field",
     "ar": "في الحقل",
-    "note_en": "Root губгъо (field) with the oblique-case ending -м.",
-    "note_ar": "الجذر губгъо (حقل) مع لاحقة الحالة المائلة -м.",
+    "note_en": "Губгъо (field) with the oblique-case ending -м, giving 'in/of the field'.",
+    "note_ar": "губгъо (حقل) مع لاحقة الحالة المائلة -м بمعنى «في الحقل».",
     "unsure": false
    },
    {
     "cyr": "илъ",
-    "en": "lies (in it), is placed",
-    "ar": "يقبع فيه، موجود",
-    "note_en": "Verb 'to lie' with the prefix и- (in it).",
-    "note_ar": "فعل 'يقبع/يوجد' مع البادئة и- (فيه).",
-    "unsure": true
+    "en": "lies, is placed inside",
+    "ar": "موضوع في داخله",
+    "note_en": "A verb of lying or being inside, with the prefix и- ('in it').",
+    "note_ar": "فعل بمعنى الكون أو الرقود في الداخل، وفيه البادئة и-.",
+    "unsure": false
    },
    {
     "cyr": "гъажъор",
-    "en": "the ripe crop, the harvest",
-    "ar": "المحصول الناضج",
-    "note_en": "Likely a noun meaning dried or ripened produce, with the -р absolutive ending.",
-    "note_ar": "غالبًا اسم بمعنى المحصول الناضج أو الجاف مع لاحقة -р.",
+    "en": "the ripe grain, the crop",
+    "ar": "الحَبّ الناضج، الغلّة",
+    "note_en": "Probably from гъажъо with the definite ending -р. I am not sure of the exact root.",
+    "note_ar": "غالبًا من гъажъо مع لاحقة التعريف -р، وأصل الكلمة غير مؤكد.",
     "unsure": true
    },
    {
     "cyr": "арэп",
     "en": "is not that",
-    "ar": "ليس ذلك",
-    "note_en": "Pronoun ар (that) with a negative copula ending.",
-    "note_ar": "الضمير ар (ذلك) مع نهاية نفي رابطة.",
-    "unsure": true
+    "ar": "ليس هو",
+    "note_en": "A negated form of 'that (is)', which sets up the contrast.",
+    "note_ar": "صيغة نفي من «هو ذاك»، وبها يبدأ التقابل.",
+    "unsure": false
    },
    {
     "cyr": "коным",
     "en": "in the barn",
     "ar": "في المخزن",
-    "note_en": "Likely кон (barn or storehouse) with the oblique-case ending -м.",
-    "note_ar": "غالبًا кон (مخزن) مع لاحقة الحالة المائلة -м.",
-    "unsure": true
+    "note_en": "Коны (barn, store) with the oblique-case ending -м.",
+    "note_ar": "коны (مخزن) مع لاحقة الحالة المائلة -м.",
+    "unsure": false
    },
    {
     "cyr": "илъыр",
-    "en": "what lies (there)",
-    "ar": "ما هو موجود فيه",
-    "note_en": "The verb илъ made into a noun-like form with -ыр.",
-    "note_ar": "الفعل илъ بصيغة اسمية مع -ыр.",
-    "unsure": true
+    "en": "what lies inside",
+    "ar": "ما هو موضوع في داخله",
+    "note_en": "The verb илъ with the nominalizing, definite ending -ыр, meaning 'the one that lies'.",
+    "note_ar": "الفعل илъ مع لاحقة الاسمية والتعريف -ыр بمعنى «ذاك الذي يوجد».",
+    "unsure": false
    },
    {
     "cyr": "ары",
     "en": "that is it",
-    "ar": "هذا هو",
-    "note_en": "Pronoun ар (that) with the copula -ы.",
-    "note_ar": "الضمير ар (ذلك) مع الرابطة -ы.",
+    "ar": "هو ذاك",
+    "note_en": "The demonstrative 'that', used here as the closing 'it is this'.",
+    "note_ar": "اسم إشارة بمعنى «ذاك»، ويأتي هنا في ختام الجملة بمعنى «هذا هو».",
     "unsure": false
    }
   ],
-  "meaning_en": "Standing crops in the field are only a promise. Real reward is what you patiently gather and store safely. Effort counts when it is brought home.",
-  "meaning_ar": "ما في الحقل مجرد وعد. المكسب الحقيقي هو ما تجمعه بصبر وتحفظه في مكان آمن. والجهد لا يُحسب إلا حين يصل إلى البيت.",
-  "caption": "Губгъом илъ гъажъор арэп, коным илъыр ары\n\nThe harvest is not what lies in the field, but what lies in the barn. Work and patience matter only when the grain is gathered and stored.\n\nالمحصول ليس ما في الحقل بل ما في المخزن. العمل والصبر لا يثمران إلا حين يُجمع الحصاد ويُحفظ.",
+  "meaning_en": "Real success is the work you have gathered and safely stored, not what is still standing in the field. Be patient and finish the job before you count your reward.",
+  "meaning_ar": "النجاح الحقيقي هو ما جمعته وخزنته بعد العمل، لا ما لا يزال واقفًا في الحقل. اصبر وأتمّ عملك قبل أن تحسب مكسبك.",
+  "caption": "Губгъом илъ гъажъор арэп, коным илъыр ары.\nThe harvest is not what lies in the field, but what lies in the barn. Finish the work and be patient before you count the reward.\n\nالمحصول ليس ما في الحقل بل ما في المخزن. أتمّ العمل واصبر قبل أن تعدّ ثمرته.",
   "hashtags": [
    "Circassian",
    "Adyghe",
    "CircassianProverbs",
-   "Proverbs",
-   "Wisdom",
+   "ProverbOfTheDay",
    "Patience",
    "Harvest",
+   "Wisdom",
    "الشركس",
    "الأديغة",
    "أمثال_شركسية",
    "حكمة",
-   "الصبر"
+   "صبر"
   ],
   "design": {
-   "bg": "#2b1d12",
-   "bg2": "#4a3220",
-   "ink": "#f6ead2",
-   "accent": "#e0a43a",
-   "muted": "#c9b48f",
+   "bg": "#F4ECD8",
+   "bg2": "#E6D7B8",
+   "ink": "#2B2118",
+   "accent": "#9C2F1F",
+   "muted": "#6B5B4A",
    "layout": "framed",
    "font": "serif",
-   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"90\" cy=\"85\" r=\"36\" fill=\"#e0a43a\"/><circle cx=\"90\" cy=\"85\" r=\"50\" fill=\"none\" stroke=\"#c9b48f\" stroke-width=\"2\"/><rect x=\"30\" y=\"320\" width=\"340\" height=\"12\" fill=\"#e0a43a\"/><g stroke=\"#e0a43a\" stroke-width=\"4\"><line x1=\"55\" y1=\"320\" x2=\"55\" y2=\"205\"/><line x1=\"90\" y1=\"320\" x2=\"90\" y2=\"190\"/><line x1=\"125\" y1=\"320\" x2=\"125\" y2=\"205\"/><line x1=\"160\" y1=\"320\" x2=\"160\" y2=\"190\"/></g><g fill=\"#f6ead2\"><ellipse cx=\"55\" cy=\"195\" rx=\"7\" ry=\"16\"/><ellipse cx=\"90\" cy=\"180\" rx=\"7\" ry=\"16\"/><ellipse cx=\"125\" cy=\"195\" rx=\"7\" ry=\"16\"/><ellipse cx=\"160\" cy=\"180\" rx=\"7\" ry=\"16\"/><ellipse cx=\"47\" cy=\"220\" rx=\"6\" ry=\"13\"/><ellipse cx=\"63\" cy=\"220\" rx=\"6\" ry=\"13\"/><ellipse cx=\"82\" cy=\"205\" rx=\"6\" ry=\"13\"/><ellipse cx=\"98\" cy=\"205\" rx=\"6\" ry=\"13\"/><ellipse cx=\"117\" cy=\"220\" rx=\"6\" ry=\"13\"/><ellipse cx=\"133\" cy=\"220\" rx=\"6\" ry=\"13\"/><ellipse cx=\"152\" cy=\"205\" rx=\"6\" ry=\"13\"/><ellipse cx=\"168\" cy=\"205\" rx=\"6\" ry=\"13\"/></g><rect x=\"225\" y=\"195\" width=\"140\" height=\"125\" fill=\"#c9b48f\"/><polygon points=\"208,200 295,120 382,200\" fill=\"#e0a43a\"/><polygon points=\"295,145 330,200 260,200\" fill=\"#4a3220\"/><rect x=\"265\" y=\"240\" width=\"60\" height=\"80\" fill=\"#2b1d12\"/><line x1=\"265\" y1=\"240\" x2=\"325\" y2=\"320\" stroke=\"#e0a43a\" stroke-width=\"4\"/><line x1=\"325\" y1=\"240\" x2=\"265\" y2=\"320\" stroke=\"#e0a43a\" stroke-width=\"4\"/><g fill=\"#e0a43a\"><polygon points=\"60,355 72,365 60,375 48,365\"/><polygon points=\"110,355 122,365 110,375 98,365\"/><polygon points=\"160,355 172,365 160,375 148,365\"/><polygon points=\"210,355 222,365 210,375 198,365\"/><polygon points=\"260,355 272,365 260,375 248,365\"/><polygon points=\"310,355 322,365 310,375 298,365\"/></g></svg>"
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"currentColor\" stroke=\"currentColor\"><line x1=\"20\" y1=\"350\" x2=\"380\" y2=\"350\" stroke-width=\"4\" stroke-opacity=\"0.8\"/><rect x=\"210\" y=\"215\" width=\"150\" height=\"135\" fill-opacity=\"0.35\" stroke-width=\"4\"/><polygon points=\"198,222 285,148 372,222\" fill-opacity=\"0.6\" stroke-width=\"4\"/><rect x=\"255\" y=\"270\" width=\"60\" height=\"80\" fill-opacity=\"0.75\" stroke-width=\"3\"/><line x1=\"255\" y1=\"270\" x2=\"315\" y2=\"350\" stroke-width=\"3\" stroke-opacity=\"0.5\"/><line x1=\"315\" y1=\"270\" x2=\"255\" y2=\"350\" stroke-width=\"3\" stroke-opacity=\"0.5\"/><circle cx=\"285\" cy=\"205\" r=\"9\" fill-opacity=\"0.8\" stroke-width=\"2\"/><line x1=\"70\" y1=\"350\" x2=\"70\" y2=\"205\" stroke-width=\"4\"/><ellipse cx=\"60\" cy=\"222\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"80\" cy=\"222\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"60\" cy=\"248\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"80\" cy=\"248\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"70\" cy=\"198\" rx=\"6\" ry=\"15\" stroke-width=\"1\"/><line x1=\"115\" y1=\"350\" x2=\"115\" y2=\"175\" stroke-width=\"4\"/><ellipse cx=\"105\" cy=\"192\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"125\" cy=\"192\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"105\" cy=\"218\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"125\" cy=\"218\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"105\" cy=\"244\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"125\" cy=\"244\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"115\" cy=\"167\" rx=\"6\" ry=\"15\" stroke-width=\"1\"/><line x1=\"160\" y1=\"350\" x2=\"160\" y2=\"215\" stroke-width=\"4\"/><ellipse cx=\"150\" cy=\"232\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"170\" cy=\"232\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"150\" cy=\"258\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"170\" cy=\"258\" rx=\"6\" ry=\"14\" stroke-width=\"1\"/><ellipse cx=\"160\" cy=\"208\" rx=\"6\" ry=\"15\" stroke-width=\"1\"/></g></svg>",
+   "light": true,
+   "grad": "radial",
+   "style": "parchment"
   }
  },
- "caption": "Губгъом илъ гъажъор арэп, коным илъыр ары\n\nالمحصول ليس ما في الحقل بل ما في المخزن.\nThe harvest is not what lies in the field, but what lies in the barn.\n\nГубгъом илъ гъажъор арэп, коным илъыр ары\n\nThe harvest is not what lies in the field, but what lies in the barn. Work and patience matter only when the grain is gathered and stored.\n\nالمحصول ليس ما في الحقل بل ما في المخزن. العمل والصبر لا يثمران إلا حين يُجمع الحصاد ويُحفظ.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#Circassian #Adyghe #CircassianProverbs #Proverbs #Wisdom #Patience #Harvest #الشركس #الأديغة #أمثال_شركسية #حكمة #الصبر",
+ "caption": "Губгъом илъ гъажъор арэп, коным илъыр ары\n\nالمحصول ليس ما في الحقل بل ما في المخزن.\nThe harvest is not what lies in the field, but what lies in the barn.\n\nГубгъом илъ гъажъор арэп, коным илъыр ары.\nThe harvest is not what lies in the field, but what lies in the barn. Finish the work and be patient before you count the reward.\n\nالمحصول ليس ما في الحقل بل ما في المخزن. أتمّ العمل واصبر قبل أن تعدّ ثمرته.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#Circassian #Adyghe #CircassianProverbs #ProverbOfTheDay #Patience #Harvest #Wisdom #الشركس #الأديغة #أمثال_شركسية #حكمة #صبر",
  "slides": [
   "slide_01.jpg",
   "slide_02.jpg",
