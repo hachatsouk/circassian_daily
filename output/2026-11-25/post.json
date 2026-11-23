@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-25",
+ "proverb": {
+  "id": 1027,
+  "dialect": "adyghe",
+  "circassian": "Узэмыджэрэр къыоджэжьырэп",
+  "latin": "Uzemıjerer qıojezchırep",
+  "english": "The one you do not invite does not invite you.",
+  "arabic": "من لا تدعوه لا يدعوك.",
+  "theme": "Friendship & enmity",
+  "source": "Çerkes Atasözleri [Адыгэ ГущыӀэжъхэр-Псалъэжьхэр], e-book, Adana, 2023, ISBN 978-605-65691-2-8 (PDF supplied by MA)",
+  "other_dialect_form": ""
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "Узэмыджэрэр",
+    "en": "the one you don't invite",
+    "ar": "الذي لا تدعوه",
+    "note_en": "Looks like a relative-noun form of the verb 'to call/invite' with a negative prefix (мы-) and the suffix -р; the exact parsing is uncertain.",
+    "note_ar": "تبدو صيغة اسم موصول من فعل «الدعوة» مع نفي (мы-) ولاحقة -р، والتحليل الدقيق غير مؤكد.",
+    "unsure": true
+   },
+   {
+    "cyr": "къыоджэжьырэп",
+    "en": "does not invite you back",
+    "ar": "لا يدعوك بالمقابل",
+    "note_en": "Verb with къы- (toward), о- (you), the root джэжь (call back) and the negative ending -рэп.",
+    "note_ar": "فعل فيه къы- (باتجاه) وо- (أنت) والجذر джэжь (يدعو بالمقابل) ولاحقة النفي -рэп.",
+    "unsure": true
+   }
+  ],
+  "meaning_en": "Hospitality and friendship are reciprocal: bonds grow when you reach out first. If you never invite people, don't expect to be invited.",
+  "meaning_ar": "الضيافة والصداقة تبادلٌ بين الناس، والروابط تنمو حين تبادر أنت. فمن لا تدعوه لا تنتظر منه أن يدعوك.",
+  "caption": "Узэмыджэрэр къыоджэжьырэп\nThe one you do not invite does not invite you.\nFriendship is a two-way road: open your door first, and doors will open for you.\n\nمن لا تدعوه لا يدعوك.\nالصداقة طريق باتجاهين: افتح بابك أولاً، فتُفتح لك الأبواب.",
+  "hashtags": [
+   "Circassian",
+   "Adyghe",
+   "CircassianProverbs",
+   "Proverbs",
+   "Hospitality",
+   "Friendship",
+   "Adygea",
+   "Caucasus",
+   "شركس",
+   "أمثال",
+   "الضيافة",
+   "الصداقة"
+  ],
+  "design": {
+   "bg": "#12402F",
+   "bg2": "#071F17",
+   "ink": "#F3EBD3",
+   "accent": "#D4A84B",
+   "muted": "#A9C2B4",
+   "layout": "centered",
+   "font": "display",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"currentColor\" stroke=\"currentColor\"><polygon points=\"30,190 100,130 170,190\" fill-opacity=\"0.85\" stroke-opacity=\"0\"/><rect x=\"45\" y=\"190\" width=\"110\" height=\"100\" fill-opacity=\"0.55\" stroke-opacity=\"0\"/><rect x=\"85\" y=\"230\" width=\"30\" height=\"60\" fill-opacity=\"0.95\" stroke-opacity=\"0\"/><rect x=\"60\" y=\"210\" width=\"18\" height=\"18\" fill-opacity=\"0.9\" stroke-opacity=\"0\"/><polygon points=\"230,190 300,130 370,190\" fill-opacity=\"0.85\" stroke-opacity=\"0\"/><rect x=\"245\" y=\"190\" width=\"110\" height=\"100\" fill-opacity=\"0.55\" stroke-opacity=\"0\"/><rect x=\"285\" y=\"230\" width=\"30\" height=\"60\" fill-opacity=\"0.95\" stroke-opacity=\"0\"/><rect x=\"322\" y=\"210\" width=\"18\" height=\"18\" fill-opacity=\"0.9\" stroke-opacity=\"0\"/><line x1=\"20\" y1=\"290\" x2=\"380\" y2=\"290\" stroke-width=\"4\" fill-opacity=\"0\"/><circle cx=\"130\" cy=\"315\" r=\"7\" fill-opacity=\"0.6\" stroke-opacity=\"0\"/><circle cx=\"160\" cy=\"325\" r=\"7\" fill-opacity=\"0.6\" stroke-opacity=\"0\"/><circle cx=\"190\" cy=\"332\" r=\"7\" fill-opacity=\"0.6\" stroke-opacity=\"0\"/><circle cx=\"220\" cy=\"325\" r=\"7\" fill-opacity=\"0.6\" stroke-opacity=\"0\"/><circle cx=\"250\" cy=\"315\" r=\"7\" fill-opacity=\"0.6\" stroke-opacity=\"0\"/><circle cx=\"200\" cy=\"80\" r=\"22\" fill-opacity=\"0.9\" stroke-opacity=\"0\"/><circle cx=\"200\" cy=\"80\" r=\"10\" fill-opacity=\"0.25\" stroke-opacity=\"0\"/><polyline points=\"110,110 150,85 175,85\" fill-opacity=\"0\" stroke-width=\"3\" stroke-opacity=\"0.6\"/><polyline points=\"290,110 250,85 225,85\" fill-opacity=\"0\" stroke-width=\"3\" stroke-opacity=\"0.6\"/><polygon points=\"200,350 212,365 200,380 188,365\" fill-opacity=\"0.8\" stroke-opacity=\"0\"/><circle cx=\"160\" cy=\"365\" r=\"5\" fill-opacity=\"0.5\" stroke-opacity=\"0\"/><circle cx=\"240\" cy=\"365\" r=\"5\" fill-opacity=\"0.5\" stroke-opacity=\"0\"/></g></svg>",
+   "angle": 170,
+   "style": "forest"
+  }
+ },
+ "caption": "Узэмыджэрэр къыоджэжьырэп\n\nمن لا تدعوه لا يدعوك.\nThe one you do not invite does not invite you.\n\nУзэмыджэрэр къыоджэжьырэп\nThe one you do not invite does not invite you.\nFriendship is a two-way road: open your door first, and doors will open for you.\n\nمن لا تدعوه لا يدعوك.\nالصداقة طريق باتجاهين: افتح بابك أولاً، فتُفتح لك الأبواب.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#Circassian #Adyghe #CircassianProverbs #Proverbs #Hospitality #Friendship #Adygea #Caucasus #شركس #أمثال #الضيافة #الصداقة",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}
