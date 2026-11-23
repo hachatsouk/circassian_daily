@@ -16,11 +16,19 @@ Theme: {theme}
 
 The proverb's words, in order: {words}
 
+Everything you return is printed on the public post as written. Write as a reference book, in the third person,
+stating only what you are certain of. Never write about yourself or your confidence.
+
 Return JSON with exactly these keys:
 - "words": one object per word above, same order and same count. Each: {{"cyr": the word exactly as given,
   "en": its meaning in this proverb (2-6 words), "ar": the same in Arabic,
-  "note_en": one short sentence on its form (root, prefix/suffix, case or verb form) or "" if unsure,
-  "note_ar": the same note in Arabic or ""}}. If you are not sure of a word, give your best gloss and set "unsure": true.
+  "note_en": one short sentence on its form (root, prefix/suffix, case or verb form),
+  "note_ar": the same note in Arabic, "unsure": true or false}}.
+  The notes are printed on the public post exactly as you write them, so write them as a reference book would:
+  plain statements of fact, never first person ("I", "my", "we"), never hedging ("probably", "seems", "perhaps",
+  "likely", "uncertain", "best reading", "not sure"; in Arabic never "ربما", "يبدو", "غير مؤكد", "لدي").
+  If you are not certain of ANY part of a word's analysis, set "unsure": true and leave both notes "" (empty);
+  do not explain the doubt. A short gloss with no note is always better than a doubtful note.
 - "meaning_en": 1-2 sentences on what the proverb teaches. "meaning_ar": the same in Arabic.
 - "caption": an Instagram caption in English then Arabic (under 600 characters in total), no hashtags.
 - "hashtags": 8-12 hashtags without the # sign, mixing English, Arabic and Circassian topics.
@@ -34,6 +42,17 @@ Return JSON with exactly these keys:
       colours ONLY "currentColor" (shade with fill-opacity/stroke-opacity; the app tints it to the day palette), no text, no images, no scripts, no external references,
       under 6000 characters.}}
   Text must stay readable: contrast between "ink" and both backgrounds must be high. Vary palettes from day to day."""
+
+
+HEDGE = re.compile(r"\b(I|I'm|my|we|our|probabl\w*|perhaps|maybe|likely|seems?|seemingly|appears? to|uncertain\w*|"
+                   r"unsure|unclear|not sure|not certain|best (?:reading|guess)|guess\w*|possibl\w*)\b"
+                   r"|ربما|يبدو|غير مؤكد|غير واضح|لدي|أظن|أعتقد|على الأرجح|من المحتمل|تفسيري|أفضل تفسير", re.I)
+
+
+def _no_doubt(text):
+    """Drop any sentence that hedges or speaks in the first person; posts state facts only."""
+    parts = re.split(r"(?<=[.!?؟])\s+", text.strip())
+    return " ".join(p for p in parts if p and not HEDGE.search(p))
 
 
 def _call(prompt):
@@ -108,7 +127,18 @@ def build_content(p, mock=False):
         fixed.append({"cyr": w, "en": str(g.get("en", "")), "ar": str(g.get("ar", "")),
                       "note_en": str(g.get("note_en", "")), "note_ar": str(g.get("note_ar", "")),
                       "unsure": bool(g.get("unsure")) or len(got) != len(words)})
+    for w in fixed:                                      # doubt never reaches the post: no note rather than a shaky one
+        if w["unsure"] or HEDGE.search(w["note_en"]) or HEDGE.search(w["note_ar"]):
+            w["note_en"] = w["note_ar"] = ""
+        for k in ("en", "ar"):
+            if HEDGE.search(w[k]):
+                w[k] = re.sub(r"\s{2,}", " ", HEDGE.sub("", w[k])).strip(" ,;()?")
     tags = [re.sub(r"[^\w]", "", str(t)) for t in raw.get("hashtags", [])][:12]
+    if "caption" in raw:
+        raw["caption"] = "\n".join(_no_doubt(l) if l.strip() else "" for l in str(raw["caption"]).split("\n")).strip()
+    for k in ("meaning_en", "meaning_ar"):
+        if k in raw:
+            raw[k] = _no_doubt(str(raw[k])) or (p["english"] if k == "meaning_en" else p["arabic"])
     return {"words": fixed, "meaning_en": str(raw.get("meaning_en", p["english"])),
             "meaning_ar": str(raw.get("meaning_ar", p["arabic"])), "caption": str(raw.get("caption", p["english"])),
             "hashtags": [t for t in tags if t], "design": clean_design(raw.get("design"))}
