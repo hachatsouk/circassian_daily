@@ -1,0 +1,73 @@
+{
+ "date": "2026-11-26",
+ "proverb": {
+  "id": 1065,
+  "dialect": "kabardian",
+  "circassian": "ТэмакъкӀэщӀыр хущӀогъуэж",
+  "latin": "Temaqk'esch'ır xusch'oghwezh",
+  "english": "The hot-tempered man will come to regret it.",
+  "arabic": "سريعُ الغضب يندم.",
+  "theme": "Honour & character",
+  "source": "Кудаева З. Ж., «Адыгская паремия», учебное пособие, Нальчик: КБГУ (PDF supplied by MA)",
+  "other_dialect_form": ""
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "ТэмакъкӀэщӀыр",
+    "en": "The hot-tempered man",
+    "ar": "سريع الغضب",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   },
+   {
+    "cyr": "хущӀогъуэж",
+    "en": "will come to regret it",
+    "ar": "سيندم على ذلك",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   }
+  ],
+  "meaning_en": "Acting in anger leads to regret. A person of good character keeps their temper in check, because words and deeds born of rage cannot be taken back.",
+  "meaning_ar": "التصرف في لحظة الغضب يقود إلى الندم. صاحب الخلق الرفيع يضبط نفسه، لأن الأقوال والأفعال التي يولدها الغضب لا يمكن استرجاعها.",
+  "caption": "ТэмакъкӀэщӀыр хущӀогъуэж\nThe hot-tempered man will come to regret it.\nA calm heart is a mark of honour and character.\n\nسريعُ الغضب يندم.\nضبط النفس عند الغضب من علامات الشرف وحسن الخلق.",
+  "hashtags": [
+   "circassian",
+   "adyghe",
+   "kabardian",
+   "circassianproverbs",
+   "proverboftheday",
+   "adygabze",
+   "الشركس",
+   "أمثال_شركسية",
+   "حكمة_اليوم",
+   "الشرف_والخلق",
+   "wisdom",
+   "caucasus"
+  ],
+  "design": {
+   "bg": "#EEF5F8",
+   "bg2": "#C9DCE6",
+   "ink": "#13303F",
+   "accent": "#1F6F8B",
+   "muted": "#4E6B78",
+   "layout": "split",
+   "font": "sans",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><g><path d=\"M200 40 C230 110 300 150 300 240 C300 310 255 350 200 350 C145 350 100 310 100 240 C100 190 130 160 150 120 C160 150 175 160 185 165 C190 120 190 80 200 40 Z\" fill=\"currentColor\" fill-opacity=\"0.25\" stroke=\"currentColor\" stroke-width=\"4\" stroke-opacity=\"0.9\"/><path d=\"M200 140 C220 190 255 215 255 265 C255 305 232 330 200 330 C168 330 145 305 145 265 C145 235 165 215 178 190 C186 205 192 210 196 212 C198 185 198 160 200 140 Z\" fill=\"currentColor\" fill-opacity=\"0.5\"/><path d=\"M200 230 C212 255 228 268 228 290 C228 308 216 320 200 320 C184 320 172 308 172 290 C172 275 184 265 192 250 C197 242 199 236 200 230 Z\" fill=\"currentColor\" fill-opacity=\"0.85\"/><circle cx=\"90\" cy=\"150\" r=\"5\" fill=\"currentColor\" fill-opacity=\"0.6\"/><circle cx=\"320\" cy=\"120\" r=\"4\" fill=\"currentColor\" fill-opacity=\"0.6\"/><circle cx=\"335\" cy=\"200\" r=\"3\" fill=\"currentColor\" fill-opacity=\"0.5\"/><circle cx=\"70\" cy=\"220\" r=\"3\" fill=\"currentColor\" fill-opacity=\"0.5\"/><circle cx=\"280\" cy=\"70\" r=\"3\" fill=\"currentColor\" fill-opacity=\"0.5\"/><ellipse cx=\"140\" cy=\"368\" rx=\"42\" ry=\"18\" fill=\"currentColor\" fill-opacity=\"0.45\"/><ellipse cx=\"200\" cy=\"372\" rx=\"42\" ry=\"18\" fill=\"currentColor\" fill-opacity=\"0.6\"/><ellipse cx=\"260\" cy=\"368\" rx=\"42\" ry=\"18\" fill=\"currentColor\" fill-opacity=\"0.45\"/></g></svg>",
+   "light": true,
+   "angle": 180,
+   "style": "snow"
+  }
+ },
+ "caption": "ТэмакъкӀэщӀыр хущӀогъуэж\n\nسريعُ الغضب يندم.\nThe hot-tempered man will come to regret it.\n\nТэмакъкӀэщӀыр хущӀогъуэж\nThe hot-tempered man will come to regret it.\nA calm heart is a mark of honour and character.\n\nسريعُ الغضب يندم.\nضبط النفس عند الغضب من علامات الشرف وحسن الخلق.\n\nKabardian dialect (East Circassian) · اللهجة القباردية (الشركسية الشرقية)\n\n#circassian #adyghe #kabardian #circassianproverbs #proverboftheday #adygabze #الشركس #أمثال_شركسية #حكمة_اليوم #الشرف_والخلق #wisdom #caucasus",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}
