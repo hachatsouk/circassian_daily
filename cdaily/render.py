@@ -19,7 +19,7 @@ body{font-family:%(lat)s,'DejaVu Serif',serif;color:%(ink)s;background:%(bgcss)s
 .motif{position:absolute;color:%(accent)s;opacity:%(mop)s;width:%(mw)spx;height:%(mw)spx;right:-140px;bottom:-140px}
 .motif svg{width:100%%;height:100%%}
 .split .motif{opacity:.5;right:auto;left:50%%;transform:translateX(-50%%);top:%(mt)spx;bottom:auto;width:%(ms)spx;height:%(ms)spx}
-.wrap{position:absolute;inset:0;padding:%(pad)s;display:flex;flex-direction:column}
+.wrap{position:absolute;inset:0;z-index:1;padding:%(pad)s;display:flex;flex-direction:column}
 .top{display:flex;justify-content:space-between;align-items:center;gap:24px}
 .logo{height:%(logo)spx;width:%(logo)spx;border-radius:50%%;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,.22)}
 .brand{font-size:30px;letter-spacing:.04em;color:%(muted)s;font-weight:600}
@@ -37,6 +37,12 @@ body{font-family:%(lat)s,'DejaVu Serif',serif;color:%(ink)s;background:%(bgcss)s
 .foot{display:flex;justify-content:space-between;align-items:flex-end;color:%(muted)s;font-size:26px;gap:20px}
 .foot .ar{white-space:nowrap}
 .kicker{color:%(accent)s;font-size:30px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.kind{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 22px;color:%(accent)s;font-weight:600;max-width:100%%}
+.kind span{white-space:nowrap;flex:none}
+.centered .kind,.framed .kind,.split .kind{justify-content:center}
+.kind .k-en{font-size:%(kind)spx;letter-spacing:.16em;text-transform:uppercase}
+.kind .k-dot{opacity:.6;font-size:%(kind)spx}
+.kind .ar{font-size:%(kindar)spx;line-height:1.2;letter-spacing:0}
 .word{font-size:%(wordsize)spx;font-weight:700;line-height:1.15}
 .letters{display:flex;flex-wrap:wrap;gap:12px;justify-content:inherit}
 .centered .letters,.framed .letters,.split .letters{justify-content:center}
@@ -110,7 +116,7 @@ def _page(body, d, size, wordsize=120):
     css = CSS % dict(w=w, h=h, lat=lat, ar=ar, ink=d["ink"], bgcss=bgcss, accent=d["accent"],
                      mop=".22" if light else ".14", chipbg="rgba(0,0,0,.05)" if light else "rgba(255,255,255,.10)",
                      muted=d["muted"], pad="250px 100px 340px" if tall else "80px", padf="214px 70px 304px" if tall else "64px",
-                     logo=132 if tall else 116, gap=44 if tall else 34,
+                     logo=132 if tall else 116, kind=28, kindar=38 if tall else 36, gap=44 if tall else 34,
                      mw=820, ms=440 if tall else 300, mt=250 if tall else 150, wordsize=wordsize)
     motif = f'<div class="motif">{d["motif_svg"]}</div>' if d["motif_svg"] else ""
     return (f'<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="{FONT_URL}">'
@@ -130,16 +136,29 @@ def _foot(p, right=""):
             f'<div class="ar" style="font-size:26px">{html.escape(lab["ar"])}</div></div>')
 
 
+# What kind of post this is, printed on the cover and the story. Add a line here for each new kind of post.
+KINDS = {"proverb": ("Circassian Proverb", "مثل شركسي")}
+
+
+def _kind(p):
+    en, ar = KINDS.get(p.get("kind", "proverb"), KINDS["proverb"])
+    return (f'<div class="kind"><span class="k-en">{html.escape(en)}</span><span class="k-dot">·</span>'
+            f'<span class="ar">{html.escape(ar)}</span></div>')
+
+
 def cover(p, c, size):
     cyr = p["circassian"]
-    fs = _fit(cyr, 92, 54) if size == FEED else _fit(cyr, 100, 60)
-    body = (_top(p) + '<div class="body">'
+    fs = _fit(cyr, 88, 52) if size == FEED else _fit(cyr, 100, 60)
+    body = (_top(p) + '<div class="body">' + _kind(p) +
             f'<div class="cyr" style="font-size:{fs}px">{html.escape(cyr)}</div>'
             f'<div class="lat">{html.escape(p["latin"])}</div><div class="rule"></div>'
             f'<div class="ar" style="font-size:{_fit(p["arabic"], 56, 40, 40, 140)}px">{html.escape(p["arabic"])}</div>'
             f'<div class="en" style="font-size:{_fit(p["english"], 46, 34, 60, 170)}px">{html.escape(p["english"])}</div>'
             '</div>' + _foot(p))
-    return _page(body, c["design"], size)
+    d = c["design"]
+    if d.get("layout") == "split" and (len(cyr) > 30 or len(p["english"]) > 70 or len(p["arabic"]) > 60):
+        d = dict(d, layout="centered")          # a long proverb needs the room the picture would take
+    return _page(body, d, size)
 
 
 def word_slide(p, c, group, start, total, size):
