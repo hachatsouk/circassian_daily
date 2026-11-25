@@ -1,0 +1,99 @@
+{
+ "date": "2026-11-27",
+ "proverb": {
+  "id": 810,
+  "dialect": "adyghe",
+  "circassian": "ШӀу зэрэлъэгъурэ зэкъошитӀур зэшӀобгъэкӀодын плъэкӀыщтэп",
+  "latin": "Sh'u zerelheghure zeqoshit'ur zesh'obghek'odın plhek'ıschtep",
+  "english": "No one can part two brothers who love each other.",
+  "arabic": "أخوان متحابّان لا يفرِّقهما أحد.",
+  "theme": "Friendship & enmity",
+  "source": "Çerkes Atasözleri [Адыгэ ГущыӀэжъхэр-Псалъэжьхэр], e-book, Adana, 2023, ISBN 978-605-65691-2-8 (PDF supplied by MA)",
+  "other_dialect_form": "ФӀыуэ зэрылъагъу зэкъуэшитӀ зэфӀэбгъэкӀуэдын плъэкӀынукъым"
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "ШӀу",
+    "en": "good; dearly",
+    "ar": "جيّد؛ بمحبّة",
+    "note_en": "Adyghe 'шӀу' means 'good'; with лъэгъун it forms the verb 'to love'.",
+    "note_ar": "في الأديغية تعني «шӀу» «جيّد»، ومع «лъэгъун» تكوّن الفعل «يحبّ».",
+    "unsure": false
+   },
+   {
+    "cyr": "зэрэлъэгъурэ",
+    "en": "who love each other",
+    "ar": "اللذان يحبّان بعضهما",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   },
+   {
+    "cyr": "зэкъошитӀур",
+    "en": "the two brothers",
+    "ar": "الأخوان",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   },
+   {
+    "cyr": "зэшӀобгъэкӀодын",
+    "en": "to separate them",
+    "ar": "أن تفرّق بينهما",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   },
+   {
+    "cyr": "плъэкӀыщтэп",
+    "en": "you will not be able",
+    "ar": "لن تستطيع",
+    "note_en": "Verb лъэкӀын 'to be able' with the future suffix -щт and the negative suffix -эп.",
+    "note_ar": "الفعل «лъэкӀын» (يستطيع) مع لاحقة المستقبل «-щт» ولاحقة النفي «-эп».",
+    "unsure": false
+   }
+  ],
+  "meaning_en": "Brothers bound by real affection cannot be divided by outsiders. The proverb praises loyalty between kin and warns against attempts to sow discord.",
+  "meaning_ar": "الأخوان اللذان تربطهما محبّة صادقة لا يستطيع أحد أن يفرّق بينهما. يمدح المثل الوفاء بين الأقارب ويحذّر من محاولات زرع الفتنة.",
+  "caption": "ШӀу зэрэлъэгъурэ зэкъошитӀур зэшӀобгъэкӀодын плъэкӀыщтэп\n\nNo one can part two brothers who love each other. A Circassian (Adyghe) proverb on loyalty and kinship.\n\nأخوان متحابّان لا يفرِّقهما أحد.\nمثل شركسي (أديغي) عن الوفاء والأخوّة.",
+  "hashtags": [
+   "Circassian",
+   "Adyghe",
+   "CircassianProverbs",
+   "ProverbOfTheDay",
+   "Brotherhood",
+   "Friendship",
+   "أمثال_شركسية",
+   "الشركس",
+   "أخوة",
+   "حكمة",
+   "Адыгэбзэ",
+   "Адыгэхэр"
+  ],
+  "design": {
+   "bg": "#86202A",
+   "bg2": "#420B12",
+   "ink": "#FBEFE3",
+   "accent": "#F2C14E",
+   "muted": "#E6BDB4",
+   "layout": "left",
+   "font": "serif",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"6\"><circle cx=\"160\" cy=\"210\" r=\"90\" stroke-opacity=\"0.9\"/><circle cx=\"240\" cy=\"210\" r=\"90\" stroke-opacity=\"0.9\"/><circle cx=\"160\" cy=\"210\" r=\"60\" stroke-opacity=\"0.35\" stroke-width=\"3\"/><circle cx=\"240\" cy=\"210\" r=\"60\" stroke-opacity=\"0.35\" stroke-width=\"3\"/></g><polygon points=\"70,150 115,70 160,150\" fill=\"currentColor\" fill-opacity=\"0.8\"/><polygon points=\"240,150 285,70 330,150\" fill=\"currentColor\" fill-opacity=\"0.8\"/><polygon points=\"115,70 128,95 102,95\" fill=\"currentColor\" fill-opacity=\"0.4\"/><polygon points=\"285,70 298,95 272,95\" fill=\"currentColor\" fill-opacity=\"0.4\"/><circle cx=\"200\" cy=\"210\" r=\"10\" fill=\"currentColor\"/><polygon points=\"200,175 212,210 200,245 188,210\" fill=\"currentColor\" fill-opacity=\"0.6\"/><line x1=\"90\" y1=\"340\" x2=\"310\" y2=\"340\" stroke=\"currentColor\" stroke-width=\"4\" stroke-opacity=\"0.6\"/><circle cx=\"90\" cy=\"340\" r=\"6\" fill=\"currentColor\"/><circle cx=\"200\" cy=\"340\" r=\"6\" fill=\"currentColor\"/><circle cx=\"310\" cy=\"340\" r=\"6\" fill=\"currentColor\"/></svg>",
+   "angle": 135,
+   "style": "pomegranate"
+  }
+ },
+ "caption": "ШӀу зэрэлъэгъурэ зэкъошитӀур зэшӀобгъэкӀодын плъэкӀыщтэп\n\nأخوان متحابّان لا يفرِّقهما أحد.\nNo one can part two brothers who love each other.\n\nШӀу зэрэлъэгъурэ зэкъошитӀур зэшӀобгъэкӀодын плъэкӀыщтэп\n\nNo one can part two brothers who love each other. A Circassian (Adyghe) proverb on loyalty and kinship.\n\nأخوان متحابّان لا يفرِّقهما أحد.\nمثل شركسي (أديغي) عن الوفاء والأخوّة.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#Circassian #Adyghe #CircassianProverbs #ProverbOfTheDay #Brotherhood #Friendship #أمثال_شركسية #الشركس #أخوة #حكمة #Адыгэбзэ #Адыгэхэр",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg",
+  "slide_05.jpg",
+  "slide_06.jpg",
+  "slide_07.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}
