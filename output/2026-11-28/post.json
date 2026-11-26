@@ -1,0 +1,118 @@
+{
+ "date": "2026-11-28",
+ "proverb": {
+  "id": 831,
+  "dialect": "adyghe",
+  "circassian": "Бзылъфыгъэм ишъхьац кӀыхь ау иакъыл нахь кӀыхьэжь",
+  "latin": "Bzılhfıghem ishhhats k'ıh au iaqıl nah k'ıhezch",
+  "english": "A woman's hair is long, but her mind is longer.",
+  "arabic": "شعرُ المرأة طويل، وعقلُها أطول.",
+  "theme": "Family",
+  "source": "Çerkes Atasözleri [Адыгэ ГущыӀэжъхэр-Псалъэжьхэр], e-book, Adana, 2023, ISBN 978-605-65691-2-8 (PDF supplied by MA)",
+  "other_dialect_form": "ЦӀыхубзым и щхьэцыр кӀыхьщ ауэ и акъылыр нэхъ кӀыхьыжщ"
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "Бзылъфыгъэм",
+    "en": "the woman's",
+    "ar": "للمرأة",
+    "note_en": "Form of бзылъфыгъэ 'woman' with the oblique-case suffix -м.",
+    "note_ar": "صيغة من «бзылъфыгъэ» أي «امرأة» مع لاحقة الحالة المائلة «-м».",
+    "unsure": false
+   },
+   {
+    "cyr": "ишъхьац",
+    "en": "her hair",
+    "ar": "شعرها",
+    "note_en": "The prefix и- 'her' attached to шъхьац 'hair'.",
+    "note_ar": "البادئة «и-» بمعنى «her» (ها) متصلة بكلمة «шъхьац» أي «شعر».",
+    "unsure": false
+   },
+   {
+    "cyr": "кӀыхь",
+    "en": "is long",
+    "ar": "طويل",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   },
+   {
+    "cyr": "ау",
+    "en": "but",
+    "ar": "لكن",
+    "note_en": "Conjunction meaning 'but'.",
+    "note_ar": "أداة عطف بمعنى «لكن».",
+    "unsure": false
+   },
+   {
+    "cyr": "иакъыл",
+    "en": "her mind",
+    "ar": "عقلها",
+    "note_en": "The prefix и- 'her' attached to акъыл 'mind', a word of Arabic origin.",
+    "note_ar": "البادئة «и-» بمعنى «ها» متصلة بكلمة «акъыл» أي «عقل»، وهي كلمة من أصل عربي.",
+    "unsure": false
+   },
+   {
+    "cyr": "нахь",
+    "en": "more",
+    "ar": "أكثر",
+    "note_en": "Comparative particle meaning 'more'.",
+    "note_ar": "أداة مقارنة بمعنى «أكثر».",
+    "unsure": false
+   },
+   {
+    "cyr": "кӀыхьэжь",
+    "en": "longer",
+    "ar": "أطول",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   }
+  ],
+  "meaning_en": "A woman's wisdom surpasses her outward beauty. The proverb teaches that character and intellect deserve more regard than appearance.",
+  "meaning_ar": "عقل المرأة يفوق جمالها الظاهر. يعلّم المثل أن الشخصية والفكر أولى بالتقدير من المظهر.",
+  "caption": "Бзылъфыгъэм ишъхьац кӀыхь ау иакъыл нахь кӀыхьэжь\n\nA woman's hair is long, but her mind is longer. A Circassian proverb on the value of wisdom within the family.\n\nشعرُ المرأة طويل، وعقلُها أطول. مثل شركسي عن قيمة الحكمة في الأسرة.",
+  "hashtags": [
+   "Circassian",
+   "Adyghe",
+   "CircassianProverbs",
+   "Proverbs",
+   "Family",
+   "Wisdom",
+   "شركسي",
+   "أمثال",
+   "حكمة",
+   "الأسرة",
+   "Адыгэ",
+   "АдыгэбзэІ"
+  ],
+  "design": {
+   "bg": "#E3E8CF",
+   "bg2": "#C3CDA2",
+   "ink": "#26301A",
+   "accent": "#55692A",
+   "muted": "#5E6650",
+   "layout": "left",
+   "font": "serif",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M200 62 C135 66 125 140 135 210 C145 280 120 330 148 385\" stroke-width=\"7\" stroke-opacity=\"0.9\"/><path d=\"M200 62 C265 66 275 140 265 210 C255 280 280 330 252 385\" stroke-width=\"7\" stroke-opacity=\"0.9\"/><path d=\"M190 66 C160 90 160 150 168 210 C176 270 156 320 176 385\" stroke-width=\"5\" stroke-opacity=\"0.6\"/><path d=\"M210 66 C240 90 240 150 232 210 C224 270 244 320 224 385\" stroke-width=\"5\" stroke-opacity=\"0.6\"/><path d=\"M200 64 C195 120 205 180 200 240 C196 290 204 340 200 388\" stroke-width=\"4\" stroke-opacity=\"0.4\"/></g><ellipse cx=\"200\" cy=\"122\" rx=\"34\" ry=\"42\" fill=\"currentColor\" fill-opacity=\"0.85\"/><polygon points=\"200,10 218,32 200,54 182,32\" fill=\"currentColor\" fill-opacity=\"0.9\"/><circle cx=\"200\" cy=\"32\" r=\"5\" fill=\"currentColor\" fill-opacity=\"0.35\"/><polygon points=\"200,372 212,385 200,398 188,385\" fill=\"currentColor\" fill-opacity=\"0.7\"/><circle cx=\"90\" cy=\"60\" r=\"4\" fill=\"currentColor\" fill-opacity=\"0.5\"/><circle cx=\"310\" cy=\"60\" r=\"4\" fill=\"currentColor\" fill-opacity=\"0.5\"/></svg>",
+   "light": true,
+   "angle": 200,
+   "style": "sage"
+  }
+ },
+ "caption": "Бзылъфыгъэм ишъхьац кӀыхь ау иакъыл нахь кӀыхьэжь\n\nشعرُ المرأة طويل، وعقلُها أطول.\nA woman's hair is long, but her mind is longer.\n\nБзылъфыгъэм ишъхьац кӀыхь ау иакъыл нахь кӀыхьэжь\n\nA woman's hair is long, but her mind is longer. A Circassian proverb on the value of wisdom within the family.\n\nشعرُ المرأة طويل، وعقلُها أطول. مثل شركسي عن قيمة الحكمة في الأسرة.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#Circassian #Adyghe #CircassianProverbs #Proverbs #Family #Wisdom #شركسي #أمثال #حكمة #الأسرة #Адыгэ #АдыгэбзэІ",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg",
+  "slide_05.jpg",
+  "slide_06.jpg",
+  "slide_07.jpg",
+  "slide_08.jpg",
+  "slide_09.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}
