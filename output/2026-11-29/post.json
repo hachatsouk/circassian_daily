@@ -1,0 +1,108 @@
+{
+ "date": "2026-11-29",
+ "proverb": {
+  "id": 467,
+  "dialect": "adyghe",
+  "circassian": "Сикъамэ тӀо къисхырэп, сигущыӀэ тӀо сӀорэп",
+  "latin": "Siqame t'o qisxırep, siguschı'e t'o s'orep",
+  "english": "I do not draw my dagger twice, and I do not give my word twice.",
+  "arabic": "لا أسلُّ خنجري مرتين، ولا أقول كلمتي مرتين.",
+  "theme": "Honour & character",
+  "source": "Blyagoz & Blyagoz, Русско-адыгейский разговорник (Maykop, 1990), proverb appendix, pp. 277–287 (PDF supplied by MA)",
+  "other_dialect_form": ""
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "Сикъамэ",
+    "en": "dagger",
+    "ar": "خنجري",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": false
+   },
+   {
+    "cyr": "тӀо",
+    "en": "twice",
+    "ar": "مرتين",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   },
+   {
+    "cyr": "къисхырэп",
+    "en": "do not draw it",
+    "ar": "لا أسلّه",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   },
+   {
+    "cyr": "сигущыӀэ",
+    "en": "word",
+    "ar": "كلمتي",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": false
+   },
+   {
+    "cyr": "тӀо",
+    "en": "twice",
+    "ar": "مرتين",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   },
+   {
+    "cyr": "сӀорэп",
+    "en": "do not say",
+    "ar": "لا أقول",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   }
+  ],
+  "meaning_en": "A person of honour acts once and speaks once: a drawn dagger and a given word are both final and are never taken back or repeated.",
+  "meaning_ar": "الإنسان الشريف يفعل مرة ويقول مرة: الخنجر المسلول والكلمة المعطاة كلاهما نهائي، لا يُسحب ولا يُكرَّر.",
+  "caption": "Siqame t'o qisxırep, siguschı'e t'o s'orep\n\nA Circassian proverb on honour and character: a word given is final.\n\nلا أسلُّ خنجري مرتين، ولا أقول كلمتي مرتين.\nمثل شركسي عن الشرف والخُلق: الكلمة إذا قيلت لا تُعاد.",
+  "hashtags": [
+   "Circassian",
+   "Adyghe",
+   "CircassianProverbs",
+   "Proverbs",
+   "Honour",
+   "Adyghebze",
+   "شركسي",
+   "أمثال",
+   "الشركس",
+   "حكمة",
+   "قفقاس",
+   "Caucasus"
+  ],
+  "design": {
+   "bg": "#222020",
+   "bg2": "#0E0D0C",
+   "ink": "#F5F0E6",
+   "accent": "#C9A227",
+   "muted": "#A39A8C",
+   "layout": "framed",
+   "font": "display",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"currentColor\" stroke=\"currentColor\"><polygon points=\"200,30 226,110 226,270 174,270 174,110\" fill-opacity=\"0.9\" stroke-opacity=\"0\"/><line x1=\"200\" y1=\"65\" x2=\"200\" y2=\"255\" stroke-width=\"4\" stroke-opacity=\"0.35\" fill-opacity=\"0\"/><rect x=\"145\" y=\"270\" width=\"110\" height=\"16\" rx=\"8\" fill-opacity=\"0.8\" stroke-opacity=\"0\"/><rect x=\"187\" y=\"286\" width=\"26\" height=\"68\" rx=\"6\" fill-opacity=\"0.6\" stroke-opacity=\"0\"/><line x1=\"187\" y1=\"304\" x2=\"213\" y2=\"304\" stroke-width=\"3\" stroke-opacity=\"0.4\"/><line x1=\"187\" y1=\"322\" x2=\"213\" y2=\"322\" stroke-width=\"3\" stroke-opacity=\"0.4\"/><line x1=\"187\" y1=\"340\" x2=\"213\" y2=\"340\" stroke-width=\"3\" stroke-opacity=\"0.4\"/><circle cx=\"200\" cy=\"366\" r=\"12\" fill-opacity=\"0.8\" stroke-opacity=\"0\"/><path d=\"M145 300 C105 300 90 345 122 352 C148 357 156 328 138 322\" fill=\"none\" stroke-width=\"6\" stroke-opacity=\"0.55\" stroke-linecap=\"round\"/><path d=\"M255 300 C295 300 310 345 278 352 C252 357 244 328 262 322\" fill=\"none\" stroke-width=\"6\" stroke-opacity=\"0.55\" stroke-linecap=\"round\"/><path d=\"M174 110 C130 100 100 70 90 40\" fill=\"none\" stroke-width=\"4\" stroke-opacity=\"0.3\" stroke-linecap=\"round\"/><path d=\"M226 110 C270 100 300 70 310 40\" fill=\"none\" stroke-width=\"4\" stroke-opacity=\"0.3\" stroke-linecap=\"round\"/><circle cx=\"90\" cy=\"40\" r=\"6\" fill-opacity=\"0.3\" stroke-opacity=\"0\"/><circle cx=\"310\" cy=\"40\" r=\"6\" fill-opacity=\"0.3\" stroke-opacity=\"0\"/></g></svg>",
+   "grad": "radial",
+   "style": "charcoal"
+  }
+ },
+ "caption": "Сикъамэ тӀо къисхырэп, сигущыӀэ тӀо сӀорэп\n\nلا أسلُّ خنجري مرتين، ولا أقول كلمتي مرتين.\nI do not draw my dagger twice, and I do not give my word twice.\n\nSiqame t'o qisxırep, siguschı'e t'o s'orep\n\nA Circassian proverb on honour and character: a word given is final.\n\nلا أسلُّ خنجري مرتين، ولا أقول كلمتي مرتين.\nمثل شركسي عن الشرف والخُلق: الكلمة إذا قيلت لا تُعاد.\n\nAdyghe dialect (West Circassian) · اللهجة الأديغية (الشركسية الغربية)\n\n#Circassian #Adyghe #CircassianProverbs #Proverbs #Honour #Adyghebze #شركسي #أمثال #الشركس #حكمة #قفقاس #Caucasus",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg",
+  "slide_05.jpg",
+  "slide_06.jpg",
+  "slide_07.jpg",
+  "slide_08.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}
