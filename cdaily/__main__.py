@@ -166,6 +166,45 @@ def cancel_pending(args):
     print("Cancelled:", ", ".join(days_))
 
 
+def rerender_pending(args):
+    """Days listed in data/rerender.txt are drawn again with the current look (for example a new logo): same proverb,
+    same words, same design. The old pictures are replaced by new files, and the day is sent to Buffer again by the
+    normal publish step. Delete the old Buffer posts first. Only future days."""
+    f = ROOT / "data" / "rerender.txt"
+    days_ = [l.strip() for l in f.read_text(encoding="utf-8").splitlines() if l.strip()] if f.exists() else []
+    if not days_:
+        print("Nothing to redraw.")
+        return
+    state = load_state()
+    tag = dt.datetime.now(dt.timezone.utc).strftime("%H%M%S")                # new file names, so no stale cached copy is used
+    for day in days_:
+        if day <= today():
+            raise SystemExit(f"{day} is today or past; refusing to redraw it (it may already be on Instagram).")
+        folder = OUT / day
+        post = json.loads((folder / "post.json").read_text(encoding="utf-8"))
+        p, c = post["proverb"], post["content"]
+        feed, tall = render.slides(p, c, render.FEED), render.slides(p, c, render.TALL)
+        feed_files = [folder / f"slide_{i:02d}_{tag}.jpg" for i in range(1, len(feed) + 1)]
+        tall_files = [folder / f"frame_{i:02d}.jpg" for i in range(1, len(tall) + 1)]
+        render.screenshot(feed, feed_files, render.FEED)
+        render.screenshot(tall, tall_files, render.TALL)
+        story = folder / f"story_{tag}.jpg"
+        story.write_bytes(tall_files[0].read_bytes())
+        reel = pub.make_reel(tall_files, folder / f"reel_{tag}.mp4", float(env("REEL_SECONDS_PER_SLIDE", "3.5")))
+        for t in tall_files:
+            t.unlink()
+        for old in post["slides"] + [post["story"], post["reel"], "buffer.json"]:
+            (folder / old).unlink(missing_ok=True)
+        post["slides"], post["story"], post["reel"] = [x.name for x in feed_files], story.name, reel.name
+        (folder / "post.json").write_text(json.dumps(post, ensure_ascii=False, indent=1), encoding="utf-8")
+        for k, v in list(state["posted"].items()):
+            if v == day:
+                del state["posted"][k]
+        save_state(state)
+        print(f"Redrew {day}: proverb #{p['id']}, same design, new pictures.")
+    f.write_text("", encoding="utf-8")
+
+
 def set_env(values):
     """Write KEY=VALUE pairs into .env, keeping the other lines."""
     f = ROOT / ".env"
@@ -246,7 +285,7 @@ def github(args):
 def main():
     load_env()
     ap = argparse.ArgumentParser(prog="cdaily", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("command", choices=["channels", "prepare", "publish", "run", "setup", "github", "check", "cancel"])
+    ap.add_argument("command", choices=["channels", "prepare", "publish", "run", "setup", "github", "check", "cancel", "rerender"])
     ap.add_argument("--date"); ap.add_argument("--id", type=int)
     ap.add_argument("--mock", action="store_true"); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--force", action="store_true")
@@ -257,6 +296,8 @@ def main():
             print(f'{ch["id"]}  {ch["service"]:<12} {ch["name"]}')
     elif args.command == "cancel":
         cancel_pending(args)
+    elif args.command == "rerender":
+        rerender_pending(args)
     elif args.command == "check":
         done = set(load_state()["posted"].values())
         start = dt.date.fromisoformat(today())
