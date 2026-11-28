@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-30",
+ "proverb": {
+  "id": 243,
+  "dialect": "kabardian",
+  "circassian": "Ептар иумыхъуэныж",
+  "latin": "Yeptar iumıkhwenızh",
+  "english": "Do not reproach someone with what you gave them.",
+  "arabic": "لا تَمُنَّ بما أعطيت.",
+  "theme": "Honour & character",
+  "source": "Адыгэ псалъэжьхэр, section on counsel, upbringing and knowledge (circassian.ucoz.com)",
+  "other_dialect_form": ""
+ },
+ "content": {
+  "words": [
+   {
+    "cyr": "Ептар",
+    "en": "what you gave them",
+    "ar": "ما أعطيتَه",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   },
+   {
+    "cyr": "иумыхъуэныж",
+    "en": "do not reproach",
+    "ar": "لا تَمُنَّ",
+    "note_en": "",
+    "note_ar": "",
+    "unsure": true
+   }
+  ],
+  "meaning_en": "A gift loses its worth when the giver reminds the receiver of it. Generosity should be given freely, without reproach.",
+  "meaning_ar": "العطاء يفقد قيمته حين يذكّر المُعطي الآخذَ به. الكرم الحقّ يُعطى بلا مِنّة.",
+  "caption": "Ептар иумыхъуэныж\nYeptar iumıkhwenızh\n\nDo not reproach someone with what you gave them. A gift mentioned again is a gift spoiled: true generosity gives freely and keeps silent.\n\nلا تَمُنَّ بما أعطيت.\nالعطاء الذي يُذكَّر به صاحبه يفقد قيمته، والكرم الحقّ يُعطي بصمت.\n\nCircassian proverb of the day.",
+  "hashtags": [
+   "Circassian",
+   "Adyghe",
+   "Kabardian",
+   "CircassianProverbs",
+   "Proverbs",
+   "Generosity",
+   "Honour",
+   "Character",
+   "شركسي",
+   "الأديغة",
+   "أمثال_شركسية",
+   "حكمة"
+  ],
+  "design": {
+   "bg": "#C8643B",
+   "bg2": "#8E3B21",
+   "ink": "#FFF6EC",
+   "accent": "#FFE1B0",
+   "muted": "#F8D3BC",
+   "layout": "centered",
+   "font": "sans",
+   "motif_svg": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><g><circle cx=\"200\" cy=\"140\" r=\"52\" fill=\"currentColor\" fill-opacity=\"0.9\"/><circle cx=\"200\" cy=\"140\" r=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\"0.5\" stroke-width=\"3\"/><circle cx=\"200\" cy=\"140\" r=\"68\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\"0.4\" stroke-width=\"2\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"140\" x2=\"92\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"290\" y1=\"140\" x2=\"308\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"136\" y1=\"76\" x2=\"124\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"264\" y1=\"76\" x2=\"276\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M70 250 Q200 370 330 250\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M105 262 Q200 345 295 262\" fill=\"currentColor\" fill-opacity=\"0.25\"/><path d=\"M70 250 L52 228\" stroke=\"currentColor\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M330 250 L348 228\" stroke=\"currentColor\" stroke-width=\"10\" stroke-linecap=\"round\"/><polygon points=\"100,370 116,356 132,370 116,384\" fill=\"currentColor\" fill-opacity=\"0.7\"/><polygon points=\"168,370 184,356 200,370 184,384\" fill=\"currentColor\" fill-opacity=\"0.7\"/><polygon points=\"236,370 252,356 268,370 252,384\" fill=\"currentColor\" fill-opacity=\"0.7\"/></g></svg>",
+   "angle": 150,
+   "style": "terracotta"
+  }
+ },
+ "caption": "Ептар иумыхъуэныж\n\nلا تَمُنَّ بما أعطيت.\nDo not reproach someone with what you gave them.\n\nЕптар иумыхъуэныж\nYeptar iumıkhwenızh\n\nDo not reproach someone with what you gave them. A gift mentioned again is a gift spoiled: true generosity gives freely and keeps silent.\n\nلا تَمُنَّ بما أعطيت.\nالعطاء الذي يُذكَّر به صاحبه يفقد قيمته، والكرم الحقّ يُعطي بصمت.\n\nCircassian proverb of the day.\n\nKabardian dialect (East Circassian) · اللهجة القباردية (الشركسية الشرقية)\n\n#Circassian #Adyghe #Kabardian #CircassianProverbs #Proverbs #Generosity #Honour #Character #شركسي #الأديغة #أمثال_شركسية #حكمة",
+ "slides": [
+  "slide_01.jpg",
+  "slide_02.jpg",
+  "slide_03.jpg",
+  "slide_04.jpg"
+ ],
+ "story": "story.jpg",
+ "reel": "reel.mp4"
+}
